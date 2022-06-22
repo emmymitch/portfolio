@@ -1,9 +1,60 @@
 @use "./variables" as *;
 @import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-// Header-navigation
+// Mobile-first design
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body{
+    background-color: $colour-background-primary;
+}
+
+header{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    margin: 0.5rem;
+
+    & *{
+        padding: 0.25rem;
+    }
+
+    // Name
+    h2{
+        font-size: 2rem;
+        font-family: $font-title;
+        text-transform: uppercase;
+        color: $colour-primary;
+        text-align: center;
+
+        span{
+            color: $colour-secondary;
+        }
+    }
+
+    .menu{
+        display: flex;
+        justify-content: space-around;
+        width: 100vw;
+
+        &__item{
+            font-size: 1.2rem;
+            font-family: $font-body;
+            color: $colour-primary;
+
+            text-decoration: none;
+            text-shadow: 0px 0px 0px $colour-background-primary;
+
+            &:hover{
+                text-shadow: 0px 0px 15px $colour-hover;
+            }
+        }
+
+    }
 }
