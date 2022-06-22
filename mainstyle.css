@@ -5,3 +5,36 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  background-color: #2C2A2A;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1.5rem;
+}
+nav * {
+  padding: 0.25rem;
+}
+nav .name {
+  font-size: 1.75rem;
+  font-family: "Cormorant", "Times New Roman", sans;
+  text-transform: uppercase;
+  color: white;
+}
+nav .name span {
+  color: #d9bea5;
+  padding: 0;
+}
+nav .menu {
+  scale: 175%;
+}
+nav .menu__item {
+  display: none;
+}
+nav .menu__icon {
+  color: white;
+}
