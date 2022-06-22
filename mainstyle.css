@@ -10,41 +10,41 @@ body {
   background-color: #2C2A2A;
 }
 
-header {
+nav {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   margin: 0.5rem;
 }
-header * {
+nav * {
   padding: 0.25rem;
 }
-header h2 {
+nav h2 {
   font-size: 2rem;
   font-family: "Cormorant", "Times New Roman", sans;
   text-transform: uppercase;
   color: white;
   text-align: center;
 }
-header h2 span {
+nav h2 span {
   color: #d9bea5;
 }
-header .menu {
+nav .menu {
   display: flex;
   justify-content: space-around;
   width: 100vw;
 }
-header .menu__item {
+nav .menu__item {
   font-size: 1.2rem;
   font-family: "Inter", "Tahoma", sans-serif;
   color: white;
   text-decoration: none;
   text-shadow: 0px 0px 0px #2C2A2A;
 }
-header .menu__item:hover {
+nav .menu__item:hover {
   text-shadow: 0px 0px 15px rgb(245, 245, 245);
 }
-header .menu__item:visited {
+nav .menu__item:visited {
   text-decoration: none;
 }
