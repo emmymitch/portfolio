@@ -36,23 +36,12 @@ nav{
         }
     }
 
-    //Navigation menu - icon in mobile
+    //Navigation menu - responsive icon in mobile
     .menu{
         scale: 175%;
 
         &__item{
             display: none;
-            // font-size: 1.2rem;
-            // font-family: $font-body;
-            // color: $colour-primary;
-            // text-decoration: none;
-            // text-shadow: 0px 0px 0px $colour-background-primary;
-            // &:hover{
-            //     text-shadow: 0px 0px 15px $colour-hover;
-            // }
-            // &:visited{
-            //     text-decoration: none;
-            // }
         }
 
         &__icon{
