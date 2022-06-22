@@ -19,13 +19,13 @@ nav {
 nav * {
   padding: 0.25rem;
 }
-nav h2 {
+nav .name {
   font-size: 1.75rem;
   font-family: "Cormorant", "Times New Roman", sans;
   text-transform: uppercase;
   color: white;
 }
-nav h2 span {
+nav .name span {
   color: #d9bea5;
   padding: 0;
 }
