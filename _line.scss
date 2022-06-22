@@ -1,0 +1,10 @@
+.line{
+    display: block;
+    width: 3rem;
+    height: 0.125rem;
+    background-color: $colour-secondary;
+
+    &--large{
+        scale: 200%;
+    }
+}

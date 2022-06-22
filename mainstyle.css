@@ -1,5 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+.line {
+  display: block;
+  width: 3rem;
+  height: 0.125rem;
+  background-color: #d9bea5;
+}
+.line--large {
+  scale: 200%;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -49,22 +59,35 @@ header h1 {
   font-weight: 200;
 }
 header .line {
-  display: block;
-  width: 3rem;
-  height: 0.125rem;
   margin: 1.5rem;
-  background-color: #d9bea5;
-}
-header .line--large {
-  scale: 200%;
 }
 header #introduction {
   font-family: "Inter", "Tahoma", sans-serif;
   font-size: 1rem;
-  line-height: 150%;
+  line-height: 160%;
   padding-top: 1rem;
 }
 
-h1, h2, h3, p {
+main {
+  margin: 1.5rem;
+}
+main h2 {
+  padding: 0.3125px 0;
+  font-size: 2rem;
+  font-family: "Cormorant", "Times New Roman", sans;
+  text-transform: uppercase;
+  color: white;
+}
+main img {
+  width: 100%;
+  padding: 3rem 0;
+}
+main p {
+  font-family: "Inter", "Tahoma", sans-serif;
+  font-size: 1rem;
+  line-height: 160%;
+}
+
+h1, h2, h3, h4, p {
   color: white;
 }
