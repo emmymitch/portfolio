@@ -40,7 +40,8 @@ nav .name span {
   padding: 0;
 }
 nav .menu {
-  scale: 175%;
+  scale: 200%;
+  margin: 1rem;
 }
 nav .menu__item {
   display: none;
