@@ -102,23 +102,23 @@ main #about p {
   color: white;
   line-height: 160%;
 }
-main #about .experience {
+main #about .expander {
   margin: 4rem 0;
 }
-main #about .experience__title {
+main #about .expander__title {
   font-family: "Cormorant", "Times New Roman", sans;
   font-size: 1.5rem;
   text-transform: uppercase;
   color: white;
   display: inline-block;
 }
-main #about .experience .line {
+main #about .expander .line {
   margin: 0.5rem 0;
 }
-main #about .experience__subtitle {
+main #about .expander__subtitle {
   display: inline-block;
 }
-main #about .experience__job-list-item {
+main #about .expander__list-item {
   width: 100%;
   padding: 1.4rem 0;
   border-bottom: 0.125rem inset #453f3f;
@@ -126,11 +126,11 @@ main #about .experience__job-list-item {
   font-size: 1rem;
   color: white;
 }
-main #about .experience__job-list-item__clickable {
+main #about .expander__list-item__clickable {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-main #about .experience__job-list-item__expand {
+main #about .expander__list-item__expand {
   display: none;
 }
