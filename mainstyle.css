@@ -7,7 +7,7 @@
   background-color: #d9bea5;
 }
 .line--large {
-  scale: 200%;
+  transform: scale(2);
 }
 
 * {
@@ -40,7 +40,7 @@ nav .name span {
   padding: 0;
 }
 nav .menu {
-  scale: 200%;
+  transform: scale(2);
   margin: 1rem;
 }
 nav .menu__item {

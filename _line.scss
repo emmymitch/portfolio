@@ -5,6 +5,6 @@
     background-color: $colour-secondary;
 
     &--large{
-        scale: 200%;
+        transform: scale(2);
     }
 }
