@@ -59,7 +59,7 @@ header{
 
     // Large title
     h1{
-        padding: 3rem 0;
+        padding: 2.5rem 0;
         font-size: 5rem;
         font-family: $font-title;
         font-weight: 200;
@@ -88,15 +88,38 @@ main{
         color: $colour-primary;
     }
 
-    img{
-        width: 100%;
-        padding: 3rem 0;
+    #portfolio{
+        margin: 4rem 0;
+
+        h2{
+            display: inline-block;
+        }
+
+        .arrow-right-down{
+            transform: scale(0.5);
+            vertical-align: bottom;
+        }
     }
 
-    p{
-        font-family: $font-body;
-        font-size: 1rem;
-        line-height: 160%;
+    #about{
+        // h2{
+        //     padding: 0.3125px 0;
+        //     font-size: 2rem;
+        //     font-family: $font-title;
+        //     text-transform: uppercase;
+        //     color: $colour-primary;
+        // }
+
+        img{
+            width: 100%;
+            padding: 3rem 0;
+        }
+
+        p{
+            font-family: $font-body;
+            font-size: 1rem;
+            line-height: 160%;
+        }
     }
 }
 

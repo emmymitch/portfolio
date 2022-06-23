@@ -5,6 +5,7 @@
   width: 3rem;
   height: 0.125rem;
   background-color: #d9bea5;
+  margin-top: 0.5rem;
 }
 .line--large {
   transform: scale(2);
@@ -54,7 +55,7 @@ header {
   margin: 1.5rem;
 }
 header h1 {
-  padding: 3rem 0;
+  padding: 2.5rem 0;
   font-size: 5rem;
   font-family: "Cormorant", "Times New Roman", sans;
   font-weight: 200;
@@ -79,11 +80,21 @@ main h2 {
   text-transform: uppercase;
   color: white;
 }
-main img {
+main #portfolio {
+  margin: 4rem 0;
+}
+main #portfolio h2 {
+  display: inline-block;
+}
+main #portfolio .arrow-right-down {
+  transform: scale(0.5);
+  vertical-align: bottom;
+}
+main #about img {
   width: 100%;
   padding: 3rem 0;
 }
-main p {
+main #about p {
   font-family: "Inter", "Tahoma", sans-serif;
   font-size: 1rem;
   line-height: 160%;
