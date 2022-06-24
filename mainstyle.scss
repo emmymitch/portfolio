@@ -412,4 +412,23 @@ footer{
             line-height: 160%;
         }
     }
+
+    main{
+        margin: -2rem 0.625rem;
+
+        .section-title{
+            h2{
+                font-size: 3rem;
+            }
+        }
+
+        #portfolio{
+            margin: 0;
+
+            .arrow-right-down{
+                transform: scale(1);
+                padding: 0.25rem 1rem;
+            }
+        }
+    }
 }

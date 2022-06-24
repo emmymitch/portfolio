@@ -326,4 +326,18 @@ footer button p {
     color: white;
     line-height: 160%;
   }
+
+  main {
+    margin: -2rem 0.625rem;
+  }
+  main .section-title h2 {
+    font-size: 3rem;
+  }
+  main #portfolio {
+    margin: 0;
+  }
+  main #portfolio .arrow-right-down {
+    transform: scale(1);
+    padding: 0.25rem 1rem;
+  }
 }
