@@ -334,3 +334,47 @@ footer{
         }
     }
 }
+
+// Media Query - Larger screens/desktop
+@media screen and (min-width:768px){
+    // body{
+    //     width: 100%;
+    // }
+    // Navbar at top - menu is responsive icon on mobile
+    nav{
+        margin: 2.5rem;
+
+        & *{
+            padding: 0.25rem;
+        }
+
+        // Name
+        .name{
+            font-size: 2rem;
+        }
+
+        // Navigation Menu
+        .menu{
+            margin: 1rem;
+            //transform: scale(1.75);
+
+            &__item{
+                display: inline-block;
+                margin: 0 1rem;
+
+                font-family: $font-body;
+                font-size: 0.75rem;
+                color: $colour-primary;
+                text-decoration: none;
+
+                &:visited{
+                    text-decoration: none;
+                }
+            }
+
+            &__icon{
+                display: none;
+            }
+        }
+    }
+}

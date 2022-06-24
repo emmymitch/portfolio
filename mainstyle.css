@@ -267,3 +267,32 @@ footer button p {
   font-weight: 700;
   transform: scale(1.4);
 }
+
+@media screen and (min-width: 768px) {
+  nav {
+    margin: 2.5rem;
+  }
+  nav * {
+    padding: 0.25rem;
+  }
+  nav .name {
+    font-size: 2rem;
+  }
+  nav .menu {
+    margin: 1rem;
+  }
+  nav .menu__item {
+    display: inline-block;
+    margin: 0 1rem;
+    font-family: "Inter", "Tahoma", sans-serif;
+    font-size: 0.75rem;
+    color: white;
+    text-decoration: none;
+  }
+  nav .menu__item:visited {
+    text-decoration: none;
+  }
+  nav .menu__icon {
+    display: none;
+  }
+}
