@@ -37,26 +37,45 @@
 
     <main>
         <section id="portfolio">
-            <h2>Portfolio</h2>
-            <img class="arrow-right-down" src="./arrow-right-curve-down.png" alt="Curved arrow pointing from title to associated content">
-            
-            
-            <article>(portfolio cards)</article>
+            <div class="section-title">
+                <h2>Portfolio</h2>
+                <img class="arrow-right-down" src="./arrow-right-curve-down.png" alt="Curved arrow pointing from title to associated content">
+            </div>
+
+            <article class="card">
+                <img class="card__img" src="./m82-supernova.jpg" alt="Placeholder image of a supernova in galaxy M82"> 
+                <div class="card__description">
+                    <div class="card__title">
+                        <h3>Project 1</h3>
+                        <div class="line"></div>
+                    </div>
+
+                    <div class="card__buttons">
+                        <button> <i class="fa-regular fa-eye"></i> </button>
+                        <button onclick="window.open('https://github.com/emmymitch')"> <i class="fa-solid fa-code"></i> </button>
+                    </div>
+                </div>
+
+                <div class="card__tag-list">
+                    <p class="card__tag">React</p>
+                    <p class="card__tag">SCSS</p>
+                </div>
+            </article>
         </section>
 
         <section id="about">
-            <h2>About.</h2>
-            <div class="line"></div>
-
+            <div class="section-title">
+                <h2>About.</h2>
+                <div class="line"></div>
+            </div>
+            
             <div id="profile">
-                <img src="m82-supernova.jpg" alt="Placeholder image of a supernova, from galaxy M82">
+                <img src="m82-supernova.jpg" alt="Placeholder image of a supernova in galaxy M82">
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel iste placeat,
                     repellendus error nisi consectetur saepe quo, repudiandae itaque praesentium
                     iure distinctio fugiat in. Odit repudiandae ut porro molestias fuga.
-                </p>
-                <br>
-                <p>
+                <br><br>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel iste placeat,
                     repellendus error nisi consectetur saepe quo, repudiandae itaque praesentium
                     iure distinctio fugiat in. Odit repudiandae ut porro molestias fuga.

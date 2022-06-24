@@ -72,6 +72,7 @@ header{
 
     #introduction{
         padding-top: 1rem;
+        padding-bottom: 2rem;
         font-family: $font-body;
         font-size: 1rem;
         color: $colour-primary;
@@ -83,18 +84,23 @@ main{
     margin: 1.5rem;
 
     // Section Titles
-    h2{
-        padding: 0.3125px 0;
+    .section-title{
+        margin: 4rem 0;
 
-        font-family: $font-title;
-        font-size: 2rem;
-        text-transform: uppercase;
-        color: $colour-primary;
+        h2{
+            padding: 0.3125px 0;
+
+            font-family: $font-title;
+            font-size: 2rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: $colour-primary;
+        }
     }
 
     // Portfolio
     #portfolio{
-        margin: 4rem 0;
+        margin: 2.5rem 0;
 
         h2{
             display: inline-block;
@@ -104,16 +110,91 @@ main{
             transform: scale(0.5);
             vertical-align: bottom;
         }
+
+        .card{
+            &__img{
+                width: 100%;
+            }
+
+            &__title{
+                margin: 0.5rem 0;
+                padding: 0.3125px 0;
+
+                font-family: $font-title;
+                font-size: 1.5rem;
+                text-transform: uppercase;
+                color: $colour-primary;
+
+                .line{
+                    width: 4.5rem;
+                    height: 0.09375rem;
+                }
+            }
+
+            &__description{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            button{
+                width: 3rem;
+                height: 3rem;
+                margin: 0.25rem;
+
+                border: none;
+                border-radius: 50%;
+
+                background-color: $colour-background-secondary;
+                color: $colour-primary;
+
+                &:hover{
+                    box-shadow: 0 0 0.75rem $colour-secondary;
+                    cursor: pointer;
+                }
+
+                i{
+                    transform: scale(1.5);
+                }
+            }
+
+            &__tag-list{
+                margin: 0.5rem 0;
+            }
+
+            &__tag{
+                display: inline-block;
+
+                margin-right: 0.15rem;
+                padding: 0.25rem 1rem;
+
+                background-color: $colour-background-secondary;
+                
+                font-family: $font-body;
+                font-size: 0.9rem;
+                font-weight: bold;
+                text-transform: uppercase;
+                color: $colour-primary;
+                text-align: center;
+
+                &:hover{
+                    background-color: $colour-secondary;
+                    color: $colour-background-primary;
+                    transition: ease-in-out 0.2s;
+                }
+            }
+        }
     }
 
     // About Me
     #about{
         img{
             width: 100%;
-            padding: 3rem 0;
+            //padding: 3rem 0;
         }
 
         p{
+            padding: 3rem 0;
             font-family: $font-body;
             font-size: 1rem;
             color: $colour-primary;
@@ -196,6 +277,7 @@ main{
             &:hover{
                 background-color: $colour-background-tertiary;
                 box-shadow: 0 0 0.75rem $colour-secondary;
+                cursor: pointer;
             }
         }
     }
@@ -226,6 +308,7 @@ footer{
 
         &:hover{
             box-shadow: 0 0 0.75rem $colour-secondary;
+            cursor: pointer;
         }
 
         i{

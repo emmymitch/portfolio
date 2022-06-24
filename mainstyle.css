@@ -66,6 +66,7 @@ header .line {
 }
 header #introduction {
   padding-top: 1rem;
+  padding-bottom: 2rem;
   font-family: "Inter", "Tahoma", sans-serif;
   font-size: 1rem;
   color: white;
@@ -75,15 +76,19 @@ header #introduction {
 main {
   margin: 1.5rem;
 }
-main h2 {
+main .section-title {
+  margin: 4rem 0;
+}
+main .section-title h2 {
   padding: 0.3125px 0;
   font-family: "Cormorant", "Times New Roman", sans;
   font-size: 2rem;
+  font-weight: bold;
   text-transform: uppercase;
   color: white;
 }
 main #portfolio {
-  margin: 4rem 0;
+  margin: 2.5rem 0;
 }
 main #portfolio h2 {
   display: inline-block;
@@ -92,11 +97,67 @@ main #portfolio .arrow-right-down {
   transform: scale(0.5);
   vertical-align: bottom;
 }
+main #portfolio .card__img {
+  width: 100%;
+}
+main #portfolio .card__title {
+  margin: 0.5rem 0;
+  padding: 0.3125px 0;
+  font-family: "Cormorant", "Times New Roman", sans;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  color: white;
+}
+main #portfolio .card__title .line {
+  width: 4.5rem;
+  height: 0.09375rem;
+}
+main #portfolio .card__description {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main #portfolio .card button {
+  width: 3rem;
+  height: 3rem;
+  margin: 0.25rem;
+  border: none;
+  border-radius: 50%;
+  background-color: #3b3636;
+  color: white;
+}
+main #portfolio .card button:hover {
+  box-shadow: 0 0 0.75rem #d9bea5;
+  cursor: pointer;
+}
+main #portfolio .card button i {
+  transform: scale(1.5);
+}
+main #portfolio .card__tag-list {
+  margin: 0.5rem 0;
+}
+main #portfolio .card__tag {
+  display: inline-block;
+  margin-right: 0.15rem;
+  padding: 0.25rem 1rem;
+  background-color: #3b3636;
+  font-family: "Inter", "Tahoma", sans-serif;
+  font-size: 0.9rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+  text-align: center;
+}
+main #portfolio .card__tag:hover {
+  background-color: #d9bea5;
+  color: #2C2A2A;
+  transition: ease-in-out 0.2s;
+}
 main #about img {
   width: 100%;
-  padding: 3rem 0;
 }
 main #about p {
+  padding: 3rem 0;
   font-family: "Inter", "Tahoma", sans-serif;
   font-size: 1rem;
   color: white;
@@ -161,6 +222,7 @@ main #contact button {
 main #contact button:hover {
   background-color: #453f3f;
   box-shadow: 0 0 0.75rem #d9bea5;
+  cursor: pointer;
 }
 
 footer {
@@ -184,6 +246,7 @@ footer button {
 }
 footer button:hover {
   box-shadow: 0 0 0.75rem #d9bea5;
+  cursor: pointer;
 }
 footer button i {
   transform: scale(2);
