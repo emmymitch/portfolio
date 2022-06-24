@@ -27,21 +27,21 @@ nav{
 
     // Name
     .name{
-        font-size: 1.75rem;
         font-family: $font-title;
+        font-size: 1.2rem;
         text-transform: uppercase;
         color: $colour-primary;
 
         span{
-            color: $colour-secondary;
             padding: 0;
+            color: $colour-secondary;
         }
     }
 
     // Navigation Menu
     .menu{
-        transform: scale(2);
         margin: 1rem;
+        transform: scale(2);
 
         &__item{
             display: none;
@@ -60,8 +60,8 @@ header{
     // Large title
     h1{
         padding: 2.5rem 0;
-        font-size: 5rem;
         font-family: $font-title;
+        font-size: 5rem;
         font-weight: 400;
         color: $colour-primary;
     }
@@ -85,8 +85,8 @@ main{
     h2{
         padding: 0.3125px 0;
 
-        font-size: 2rem;
         font-family: $font-title;
+        font-size: 2rem;
         text-transform: uppercase;
         color: $colour-primary;
     }
@@ -121,12 +121,12 @@ main{
             margin: 4rem 0;
 
             &__title{
+                display: inline-block;
+
                 font-family: $font-title;
                 font-size: 1.5rem;
                 text-transform: uppercase;
                 color: $colour-primary;
-
-                display: inline-block;
             }
 
             .line{
@@ -165,22 +165,23 @@ main{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        border-radius: 2px solid red;
 
         h1{
+            margin: 2rem;
+
             font-family: $font-title;
             font-size: 5rem;
             font-weight: 400;
             color: $colour-primary;
             text-align: center;
-            margin: 2rem;
         }
 
         button{
-            background-color: $colour-background-primary;
-            border: 2px solid $colour-secondary;
             padding: 1.5rem 5rem;
             margin: 1.5rem;
+
+            background-color: $colour-background-primary;
+            border: 2px solid $colour-secondary;
 
             font-family: $font-body;
             font-size: 1.125rem;
@@ -188,9 +189,52 @@ main{
             color: $colour-primary;
 
             &:hover{
-                box-shadow: 0 0 0.75rem $colour-secondary;
                 background-color: $colour-background-tertiary;
+                box-shadow: 0 0 0.75rem $colour-secondary;
             }
+        }
+    }
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 7rem;
+    width: 100%;
+
+    background-color: $colour-background-secondary;
+
+    button{
+        width: 3rem;
+        height: 3rem;
+        padding: 1rem;
+        margin: 0.5rem;
+
+        border: none;
+        border-radius: 50%;
+
+        background-color: $colour-background-tertiary;
+        color: $colour-secondary;
+
+        &:hover{
+            box-shadow: 0 0 0.75rem $colour-secondary;
+        }
+
+        i{
+            transform: scale(2);
+        }
+
+        p{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            font-family: sans-serif;
+            font-size: 1rem;
+            font-weight: 700;
+            transform: scale(1.4);
         }
     }
 }
