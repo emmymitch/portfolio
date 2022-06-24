@@ -66,7 +66,6 @@ header .line {
 }
 header #introduction {
   padding-top: 1rem;
-  padding-bottom: 2rem;
   font-family: "Inter", "Tahoma", sans-serif;
   font-size: 1rem;
   color: white;
@@ -77,7 +76,8 @@ main {
   margin: 1.5rem;
 }
 main .section-title {
-  margin: 4rem 0;
+  margin-top: 8rem;
+  margin-bottom: 4rem;
 }
 main .section-title h2 {
   padding: 0.3125px 0;
@@ -96,6 +96,12 @@ main #portfolio h2 {
 main #portfolio .arrow-right-down {
   transform: scale(0.5);
   vertical-align: bottom;
+}
+main #portfolio #card-4, main #portfolio #card-5, main #portfolio #card-6 {
+  display: none;
+}
+main #portfolio .card {
+  margin: 3rem 0;
 }
 main #portfolio .card__img {
   width: 100%;
@@ -127,6 +133,7 @@ main #portfolio .card button {
   color: white;
 }
 main #portfolio .card button:hover {
+  background-color: #453f3f;
   box-shadow: 0 0 0.75rem #d9bea5;
   cursor: pointer;
 }
