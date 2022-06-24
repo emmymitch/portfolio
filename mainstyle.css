@@ -269,15 +269,12 @@ footer button p {
 }
 
 @media screen and (min-width: 768px) {
-  body {
-    padding: 0 6rem;
-  }
-
   nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 2.5rem 0;
+    padding: 0 6rem;
     width: 100%;
   }
   nav * {
@@ -309,6 +306,7 @@ footer button p {
 
   header {
     margin: 0;
+    padding: 0 6rem;
   }
   header h1 {
     padding-top: 2.5rem;
@@ -328,10 +326,12 @@ footer button p {
   }
 
   main {
-    margin: -2rem 0.625rem;
+    margin: -2rem 0;
+    padding: 0 6rem;
   }
   main .section-title h2 {
     font-size: 3rem;
+    margin: 0 0.5rem;
   }
   main #portfolio {
     margin: 0;
@@ -339,5 +339,20 @@ footer button p {
   main #portfolio .arrow-right-down {
     transform: scale(1);
     padding: 0.25rem 1rem;
+  }
+  main #portfolio #card-4, main #portfolio #card-5, main #portfolio #card-6 {
+    display: inline-block;
+  }
+  main #portfolio #project-cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  main #portfolio .card {
+    margin: 0 0.5rem;
+    padding-bottom: 1.5rem;
+    width: 25rem;
+    flex-grow: 1;
   }
 }

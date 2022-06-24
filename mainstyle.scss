@@ -337,17 +337,14 @@ footer{
 
 // Media Query - Larger screens/desktop
 @media screen and (min-width:768px){
-    body{
-        padding: 0 6rem;
-    }
-
     // Navbar at top - expanded menu on bigger screens
     nav{
         display: flex;
         justify-content: space-between;
         align-items: center;
 
-        margin: 2.5rem 0;
+        margin: 2.5rem 0; 
+        padding: 0 6rem;
         width: 100%;
 
         & *{
@@ -391,6 +388,7 @@ footer{
     // Header styles - title and intro paragraph
     header{
         margin: 0;
+        padding: 0 6rem;
 
         h1{
             padding-top: 2.5rem;
@@ -414,11 +412,13 @@ footer{
     }
 
     main{
-        margin: -2rem 0.625rem;
+        margin: -2rem 0;
+        padding: 0 6rem;
 
         .section-title{
             h2{
                 font-size: 3rem;
+                margin: 0 0.5rem;
             }
         }
 
@@ -428,6 +428,24 @@ footer{
             .arrow-right-down{
                 transform: scale(1);
                 padding: 0.25rem 1rem;
+            }
+
+            #card-4, #card-5, #card-6{
+                display: inline-block;
+            }
+            
+            #project-cards{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-wrap: wrap;
+            }
+
+            .card{
+                margin: 0 0.5rem;
+                padding-bottom: 1.5rem;
+                width: 25rem;
+                flex-grow: 1;
             }
         }
     }
