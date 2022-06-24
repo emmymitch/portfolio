@@ -269,8 +269,13 @@ footer button p {
 }
 
 @media screen and (min-width: 768px) {
+  body {
+    width: 90vw;
+  }
+
   nav {
     margin: 2.5rem;
+    width: 100%;
   }
   nav * {
     padding: 0.25rem;
@@ -279,14 +284,19 @@ footer button p {
     font-size: 2rem;
   }
   nav .menu {
-    margin: 1rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 1rem;
   }
   nav .menu__item {
     display: inline-block;
     margin: 0 1rem;
     font-family: "Inter", "Tahoma", sans-serif;
-    font-size: 0.75rem;
+    font-size: 0.6rem;
     color: white;
+    text-align: center;
     text-decoration: none;
   }
   nav .menu__item:visited {

@@ -337,12 +337,14 @@ footer{
 
 // Media Query - Larger screens/desktop
 @media screen and (min-width:768px){
-    // body{
-    //     width: 100%;
-    // }
-    // Navbar at top - menu is responsive icon on mobile
+    body{
+        width: 90vw;
+    }
+
+    // Navbar at top - expanded menu on bigger screens
     nav{
         margin: 2.5rem;
+        width: 100%;
 
         & *{
             padding: 0.25rem;
@@ -355,16 +357,21 @@ footer{
 
         // Navigation Menu
         .menu{
-            margin: 1rem;
-            //transform: scale(1.75);
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            flex-wrap: wrap;
+
+            margin: 0 1rem;
 
             &__item{
                 display: inline-block;
                 margin: 0 1rem;
 
                 font-family: $font-body;
-                font-size: 0.75rem;
+                font-size: 0.6rem;
                 color: $colour-primary;
+                text-align: center;
                 text-decoration: none;
 
                 &:visited{
