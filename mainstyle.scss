@@ -335,8 +335,9 @@ footer{
     }
 }
 
-// Media Query - Larger screens/desktop
+// Media Query - Larger screens/desktop //////////////////////////////////////////////////////////////////////
 @media screen and (min-width:768px){
+    
     // Navbar at top - expanded menu on bigger screens
     nav{
         display: flex;
@@ -360,13 +361,12 @@ footer{
         // Navigation Menu
         .menu{
             display: flex;
+            justify-content: flex-end;
             flex-wrap: wrap;
-
-            //margin: 0 1rem;
 
             &__item{
                 display: inline-block;
-                margin: 0 1rem;
+                width: 4rem;
 
                 font-family: $font-body;
                 font-size: 0.6rem;
@@ -422,6 +422,7 @@ footer{
             }
         }
 
+        // Desktop portfolio
         #portfolio{
             margin: 0;
 
@@ -448,7 +449,7 @@ footer{
                 flex-grow: 1;
             }
         }
-
+        
         #about{
             margin: 12rem 0;
             padding: 0 6rem;

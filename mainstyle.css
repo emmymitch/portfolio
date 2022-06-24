@@ -286,11 +286,12 @@ footer button p {
   }
   nav .menu {
     display: flex;
+    justify-content: flex-end;
     flex-wrap: wrap;
   }
   nav .menu__item {
     display: inline-block;
-    margin: 0 1rem;
+    width: 4rem;
     font-family: "Inter", "Tahoma", sans-serif;
     font-size: 0.6rem;
     color: white;
