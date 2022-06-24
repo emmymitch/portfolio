@@ -270,11 +270,11 @@ footer button p {
 
 @media screen and (min-width: 768px) {
   body {
-    width: 90vw;
+    padding: 0 4rem;
   }
 
   nav {
-    margin: 2.5rem;
+    margin: 2.5rem 0;
     width: 100%;
   }
   nav * {
@@ -304,5 +304,27 @@ footer button p {
   }
   nav .menu__icon {
     display: none;
+  }
+
+  header {
+    margin: 0;
+  }
+  header h1 {
+    padding: 2.5rem 0;
+    font-family: "Cormorant", "Times New Roman", sans;
+    font-size: 7rem;
+    font-weight: 400;
+    color: white;
+  }
+  header .line {
+    margin: 1.5rem;
+  }
+  header #introduction {
+    padding-top: 1rem;
+    width: 40%;
+    font-family: "Inter", "Tahoma", sans-serif;
+    font-size: 1rem;
+    color: white;
+    line-height: 160%;
   }
 }

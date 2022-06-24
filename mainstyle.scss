@@ -338,12 +338,13 @@ footer{
 // Media Query - Larger screens/desktop
 @media screen and (min-width:768px){
     body{
-        width: 90vw;
+        //width: 90vw;
+        padding: 0 4rem;
     }
 
     // Navbar at top - expanded menu on bigger screens
     nav{
-        margin: 2.5rem;
+        margin: 2.5rem 0;
         width: 100%;
 
         & *{
@@ -384,4 +385,32 @@ footer{
             }
         }
     }
+
+    // Header styles - title and intro paragraph
+header{
+    margin: 0;
+
+    // Large title
+    h1{
+        padding: 2.5rem 0;
+        font-family: $font-title;
+        font-size: 7rem;
+        font-weight: 400;
+        color: $colour-primary;
+    }
+
+    .line{
+        margin: 1.5rem;
+    }
+
+    #introduction{
+        padding-top: 1rem;
+        width: 40%;
+
+        font-family: $font-body;
+        font-size: 1rem;
+        color: $colour-primary;
+        line-height: 160%;
+    }
+}
 }
