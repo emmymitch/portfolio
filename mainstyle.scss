@@ -117,7 +117,7 @@ main{
             display: none;
         }
     }
-    
+
     // About Me
     #about{
         img{
@@ -344,17 +344,16 @@ footer{
                 column-gap: 4rem;
                 grid-template-rows: 1fr 5fr;
                 justify-content: start;
-                align-content: start;
 
                 .section-title{
                     grid-area: 1/1/2/2;
                     margin: 0;
                     padding: 0;
+                    align-self: end;
                 }
 
                 img{
                     grid-area: 1/2/3/3;
-                    object-fit: contain;
                 }
 
                 p{
