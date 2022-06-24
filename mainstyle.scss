@@ -62,7 +62,7 @@ header{
         padding: 2.5rem 0;
         font-size: 5rem;
         font-family: $font-title;
-        font-weight: 200;
+        font-weight: 400;
         color: $colour-primary;
     }
 
@@ -156,6 +156,40 @@ main{
                 &__expand{
                     display: none;
                 }
+            }
+        }
+    }
+
+    #contact{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 2px solid red;
+
+        h1{
+            font-family: $font-title;
+            font-size: 5rem;
+            font-weight: 400;
+            color: $colour-primary;
+            text-align: center;
+            margin: 2rem;
+        }
+
+        button{
+            background-color: $colour-background-primary;
+            border: 2px solid $colour-secondary;
+            padding: 1.5rem 5rem;
+            margin: 1.5rem;
+
+            font-family: $font-body;
+            font-size: 1.125rem;
+            text-transform: uppercase;
+            color: $colour-primary;
+
+            &:hover{
+                box-shadow: 0 0 0.75rem $colour-secondary;
+                background-color: $colour-background-tertiary;
             }
         }
     }

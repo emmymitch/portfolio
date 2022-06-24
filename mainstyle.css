@@ -58,7 +58,7 @@ header h1 {
   padding: 2.5rem 0;
   font-size: 5rem;
   font-family: "Cormorant", "Times New Roman", sans;
-  font-weight: 200;
+  font-weight: 400;
   color: white;
 }
 header .line {
@@ -133,4 +133,33 @@ main #about .expander__list-item__clickable {
 }
 main #about .expander__list-item__expand {
   display: none;
+}
+main #contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2px solid red;
+}
+main #contact h1 {
+  font-family: "Cormorant", "Times New Roman", sans;
+  font-size: 5rem;
+  font-weight: 400;
+  color: white;
+  text-align: center;
+  margin: 2rem;
+}
+main #contact button {
+  background-color: #2C2A2A;
+  border: 2px solid #d9bea5;
+  padding: 1.5rem 5rem;
+  margin: 1.5rem;
+  font-family: "Inter", "Tahoma", sans-serif;
+  font-size: 1.125rem;
+  text-transform: uppercase;
+  color: white;
+}
+main #contact button:hover {
+  box-shadow: 0 0 0.75rem #d9bea5;
+  background-color: #453f3f;
 }
