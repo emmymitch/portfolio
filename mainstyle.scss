@@ -340,7 +340,7 @@ footer{
 
             #profile{
                 display: grid;
-                grid-template-columns: 1fr 1fr;
+                grid-template-columns: 35rem 1fr;
                 column-gap: 4rem;
                 grid-template-rows: 1fr 5fr;
                 justify-content: start;
@@ -354,6 +354,8 @@ footer{
 
                 img{
                     grid-area: 1/2/3/3;
+                    height: 33rem;
+                    width: auto;
                 }
 
                 p{
