@@ -11,6 +11,100 @@
   transform: scale(2);
 }
 
+.expander {
+  margin: 4rem 0;
+}
+.expander__title {
+  display: inline-block;
+  font-family: "Cormorant", "Times New Roman", sans;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  color: white;
+}
+.expander .line {
+  margin: 0.5rem 0;
+}
+.expander__subtitle {
+  display: inline-block;
+}
+.expander__list-item {
+  width: 100%;
+  padding: 1.4rem 0;
+  border-bottom: 0.125rem inset #453f3f;
+  font-family: "Cormorant", "Times New Roman", sans;
+  font-size: 1rem;
+  color: white;
+}
+.expander__list-item__clickable {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.expander__list-item__expand {
+  display: none;
+}
+
+.card {
+  margin: 3rem 0;
+}
+.card__img {
+  width: 100%;
+}
+.card__title {
+  margin: 0.5rem 0;
+  padding: 0.3125px 0;
+  font-family: "Cormorant", "Times New Roman", sans;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  color: white;
+}
+.card__title .line {
+  width: 4.5rem;
+  height: 0.09375rem;
+}
+.card__description {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card button {
+  width: 3rem;
+  height: 3rem;
+  margin: 0.25rem;
+  border: none;
+  border-radius: 50%;
+  background-color: #3b3636;
+  color: white;
+}
+.card button:hover {
+  background-color: #453f3f;
+  box-shadow: 0 0 0.75rem #d9bea5;
+  cursor: pointer;
+}
+.card button i {
+  transform: scale(1.5);
+}
+.card__tag-list {
+  margin: 0.5rem 0;
+}
+.card__tag {
+  display: inline-block;
+  margin-right: 0.15rem;
+  padding: 0.25rem 1rem;
+  background-color: #3b3636;
+  font-family: "Inter", "Tahoma", sans-serif;
+  font-size: 0.9rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+  text-align: center;
+}
+.card__tag:hover {
+  background-color: #d9bea5;
+  color: #2C2A2A;
+  transition: ease-in-out 0.2s;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -100,66 +194,6 @@ main #portfolio .arrow-right-down {
 main #portfolio #card-4, main #portfolio #card-5, main #portfolio #card-6 {
   display: none;
 }
-main #portfolio .card {
-  margin: 3rem 0;
-}
-main #portfolio .card__img {
-  width: 100%;
-}
-main #portfolio .card__title {
-  margin: 0.5rem 0;
-  padding: 0.3125px 0;
-  font-family: "Cormorant", "Times New Roman", sans;
-  font-size: 1.5rem;
-  text-transform: uppercase;
-  color: white;
-}
-main #portfolio .card__title .line {
-  width: 4.5rem;
-  height: 0.09375rem;
-}
-main #portfolio .card__description {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-main #portfolio .card button {
-  width: 3rem;
-  height: 3rem;
-  margin: 0.25rem;
-  border: none;
-  border-radius: 50%;
-  background-color: #3b3636;
-  color: white;
-}
-main #portfolio .card button:hover {
-  background-color: #453f3f;
-  box-shadow: 0 0 0.75rem #d9bea5;
-  cursor: pointer;
-}
-main #portfolio .card button i {
-  transform: scale(1.5);
-}
-main #portfolio .card__tag-list {
-  margin: 0.5rem 0;
-}
-main #portfolio .card__tag {
-  display: inline-block;
-  margin-right: 0.15rem;
-  padding: 0.25rem 1rem;
-  background-color: #3b3636;
-  font-family: "Inter", "Tahoma", sans-serif;
-  font-size: 0.9rem;
-  font-weight: bold;
-  text-transform: uppercase;
-  color: white;
-  text-align: center;
-}
-main #portfolio .card__tag:hover {
-  background-color: #d9bea5;
-  color: #2C2A2A;
-  transition: ease-in-out 0.2s;
-}
 main #about img {
   width: 100%;
 }
@@ -169,38 +203,6 @@ main #about p {
   font-size: 1rem;
   color: white;
   line-height: 160%;
-}
-main #about .expander {
-  margin: 4rem 0;
-}
-main #about .expander__title {
-  display: inline-block;
-  font-family: "Cormorant", "Times New Roman", sans;
-  font-size: 1.5rem;
-  text-transform: uppercase;
-  color: white;
-}
-main #about .expander .line {
-  margin: 0.5rem 0;
-}
-main #about .expander__subtitle {
-  display: inline-block;
-}
-main #about .expander__list-item {
-  width: 100%;
-  padding: 1.4rem 0;
-  border-bottom: 0.125rem inset #453f3f;
-  font-family: "Cormorant", "Times New Roman", sans;
-  font-size: 1rem;
-  color: white;
-}
-main #about .expander__list-item__clickable {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-main #about .expander__list-item__expand {
-  display: none;
 }
 main #contact {
   display: flex;

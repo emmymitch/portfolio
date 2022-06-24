@@ -1,0 +1,41 @@
+.expander{
+    margin: 4rem 0;
+
+    &__title{
+        display: inline-block;
+
+        font-family: $font-title;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        color: $colour-primary;
+    }
+
+    .line{
+        margin: 0.5rem 0;
+    }
+
+    &__subtitle{
+        display: inline-block;
+    }
+
+
+    &__list-item{
+        width: 100%;
+        padding: 1.4rem 0;
+        border-bottom: 0.125rem inset $colour-background-tertiary;
+
+        font-family: $font-title;
+        font-size: 1rem;
+        color: $colour-primary;
+
+        &__clickable{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        &__expand{
+            display: none;
+        }
+    }
+}
