@@ -355,4 +355,19 @@ footer button p {
     width: 25rem;
     flex-grow: 1;
   }
+  main #about {
+    padding: 0 6rem;
+  }
+  main #about #personal-information {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 6rem;
+  }
+  main #about .expander {
+    display: inline-block;
+    width: 40%;
+  }
+  main #contact h1 {
+    font-size: 7rem;
+  }
 }

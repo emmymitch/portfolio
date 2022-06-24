@@ -448,5 +448,28 @@ footer{
                 flex-grow: 1;
             }
         }
+
+        #about{
+            padding: 0 6rem;
+
+            #personal-information{
+                display: flex;
+                justify-content: space-between;
+
+                padding-bottom: 6rem;
+            }
+
+            .expander{
+                display: inline-block;
+                width: 40%;
+            }
+
+        }
+
+        #contact{
+            h1{
+                font-size: 7rem;
+            }
+        }
     }
 }
