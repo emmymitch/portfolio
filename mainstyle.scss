@@ -338,12 +338,15 @@ footer{
 // Media Query - Larger screens/desktop
 @media screen and (min-width:768px){
     body{
-        //width: 90vw;
-        padding: 0 4rem;
+        padding: 0 6rem;
     }
 
     // Navbar at top - expanded menu on bigger screens
     nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
         margin: 2.5rem 0;
         width: 100%;
 
@@ -354,16 +357,15 @@ footer{
         // Name
         .name{
             font-size: 2rem;
+            font-weight: bold;
         }
 
         // Navigation Menu
         .menu{
             display: flex;
-            justify-content: flex-end;
-            align-items: center;
             flex-wrap: wrap;
 
-            margin: 0 1rem;
+            //margin: 0 1rem;
 
             &__item{
                 display: inline-block;
@@ -387,30 +389,27 @@ footer{
     }
 
     // Header styles - title and intro paragraph
-header{
-    margin: 0;
+    header{
+        margin: 0;
 
-    // Large title
-    h1{
-        padding: 2.5rem 0;
-        font-family: $font-title;
-        font-size: 7rem;
-        font-weight: 400;
-        color: $colour-primary;
+        h1{
+            padding-top: 2.5rem;
+            font-size: 7rem;
+        }
+
+        .line{
+            margin-top: -1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        #introduction{
+            padding-top: 1rem;
+            width: 40%;
+
+            font-family: $font-body;
+            font-size: 1rem;
+            color: $colour-primary;
+            line-height: 160%;
+        }
     }
-
-    .line{
-        margin: 1.5rem;
-    }
-
-    #introduction{
-        padding-top: 1rem;
-        width: 40%;
-
-        font-family: $font-body;
-        font-size: 1rem;
-        color: $colour-primary;
-        line-height: 160%;
-    }
-}
 }
