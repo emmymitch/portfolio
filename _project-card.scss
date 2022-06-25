@@ -40,6 +40,7 @@
         &:hover{
             background-color: $colour-background-tertiary;
             box-shadow: 0 0 0.75rem $colour-hover;
+            transition: ease-in-out 0.1s;
             cursor: pointer;
         }
 
@@ -66,6 +67,8 @@
         text-transform: uppercase;
         color: $colour-primary;
         text-align: center;
+
+        cursor: default;
 
         &:hover{
             background-color: $colour-secondary;

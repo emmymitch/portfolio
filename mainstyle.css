@@ -79,6 +79,7 @@
 .card button:hover {
   background-color: #4b3050;
   box-shadow: 0 0 0.75rem rgb(241, 184, 241);
+  transition: ease-in-out 0.1s;
   cursor: pointer;
 }
 .card button i {
@@ -98,6 +99,7 @@
   text-transform: uppercase;
   color: white;
   text-align: center;
+  cursor: default;
 }
 .card__tag:hover {
   background-color: #dbb4b1;
@@ -223,6 +225,7 @@ main #contact button {
   margin: 1.5rem;
   background-color: #311e39;
   border: 2px solid #dbb4b1;
+  transition: ease-in-out 0.1s;
   font-family: "Inter", "Tahoma", sans-serif;
   font-size: 1.125rem;
   text-transform: uppercase;
@@ -252,6 +255,7 @@ footer button {
   border-radius: 50%;
   background-color: #4b3050;
   color: white;
+  transition: ease-in-out 0.1s;
 }
 footer button:hover {
   box-shadow: 0 0 0.75rem rgb(241, 184, 241);

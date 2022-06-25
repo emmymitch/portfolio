@@ -158,6 +158,7 @@ main{
 
             background-color: $colour-background-primary;
             border: 2px solid $colour-secondary;
+            transition: ease-in-out 0.1s;
 
             font-family: $font-body;
             font-size: 1.125rem;
@@ -195,6 +196,7 @@ footer{
 
         background-color: $colour-background-tertiary;
         color: $colour-primary;
+        transition: ease-in-out 0.1s;
 
         &:hover{
             box-shadow: 0 0 0.75rem $colour-hover;
