@@ -14,11 +14,22 @@
     <nav>
         <p class="name">Emily <span>Mitcheson-Smith.</span></p>
 
-        <div class="menu">
+        <!-- <div class="menu">
             <a tabindex=1 class="menu__item" href="#about">About</a>
             <a tabindex=2 class="menu__item" href="#portfolio">Portfolio</a>
             <a tabindex=3 class="menu__item" href="#contact">Contact</a>
             <a tabindex=1 class="menu__icon"><i class="fa-solid fa-bars"></i></a>
+        </div> -->
+
+        <div class="menu">
+            <input type="checkbox">
+            <i class="fa-solid fa-bars menu__icon"></i>
+            <i class="fa-solid fa-x menu__icon menu__icon--close"></i>
+            <div class="menu__list">
+                <li><a tabindex=1 class="menu__item" href="#about">About</a></li>
+                <li><a tabindex=2 class="menu__item" href="#portfolio">Portfolio</a></li>
+                <li><a tabindex=3 class="menu__item" href="#contact">Contact</a></li>
+            </div>
         </div>
     </nav>    
 

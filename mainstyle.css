@@ -118,15 +118,15 @@ body {
 }
 
 nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   margin: 1.5rem;
 }
 nav * {
   padding: 0.25rem;
 }
 nav .name {
+  display: inline-block;
+  padding-right: 5rem;
+  padding-top: 0.5rem;
   font-family: "Cormorant", "Times New Roman", sans;
   font-size: 1.3rem;
   text-transform: uppercase;
@@ -137,14 +137,86 @@ nav .name span {
   color: #dbb4b1;
 }
 nav .menu {
-  margin: 1rem;
-  transform: scale(1.75);
+  display: inline-block;
+  background-color: #311e39;
 }
-nav .menu__item {
-  display: none;
+nav .menu input {
+  display: inline-block;
+  position: absolute;
+  right: 2.2rem;
+  top: 1.9rem;
+  width: 1rem;
+  height: 1rem;
+  z-index: 1;
+  opacity: 0;
+  transform: scale(1.75);
+  cursor: pointer;
 }
 nav .menu__icon {
+  display: inline-block;
+  position: absolute;
+  right: 2rem;
+  top: 1.9rem;
   color: white;
+  opacity: 100;
+  transform: scale(1.75);
+}
+nav .menu__icon--close {
+  top: 1.9rem;
+  opacity: 0;
+  transform: scale(1);
+}
+nav .menu__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  opacity: 0;
+}
+@media screen and (max-width: 767px) {
+  nav .menu__list {
+    position: absolute;
+    top: 4rem;
+    right: 2.2rem;
+  }
+}
+nav .menu__list li {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  height: 3rem;
+  width: 70vw;
+  max-width: 17rem;
+  background-color: #412846;
+  opacity: 95%;
+}
+nav .menu__list li:hover {
+  background-color: #4b3050;
+}
+nav .menu__list a {
+  width: 100%;
+  padding: 1rem;
+  font-family: "Inter", "Tahoma", sans-serif;
+  font-size: 1rem;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+nav .menu__list a:visited {
+  text-decoration: none;
+}
+nav .menu input:checked ~ .menu__list {
+  width: auto;
+  opacity: 95%;
+  transition: ease-in-out 0.15s;
+}
+nav .menu input:checked ~ .menu__icon {
+  opacity: 0;
+}
+nav .menu input:checked ~ .menu__icon--close {
+  opacity: 100;
 }
 
 header {
@@ -225,6 +297,7 @@ main #contact button {
   margin: 1.5rem;
   background-color: #311e39;
   border: 2px solid #dbb4b1;
+  border-radius: 0.625rem;
   transition: ease-in-out 0.1s;
   font-family: "Inter", "Tahoma", sans-serif;
   font-size: 1.125rem;
@@ -281,34 +354,52 @@ footer button p {
     align-items: center;
     margin: 2.5rem 0;
     padding: 0 6rem;
-    width: 100%;
-  }
-  nav * {
-    padding: 0.25rem;
   }
   nav .name {
+    padding: 0;
     font-size: 2rem;
     font-weight: bold;
   }
   nav .menu {
     display: flex;
-    justify-content: flex-end;
     flex-wrap: wrap;
   }
-  nav .menu__item {
-    display: inline-block;
-    width: 4rem;
+  nav .menu input, nav .menu__icon {
+    display: none;
+  }
+  nav .menu__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    opacity: 100;
+  }
+  nav .menu__list li {
+    display: flex;
+    align-items: center;
+    margin-left: 2rem;
+    width: 7rem;
+    height: 3.15rem;
+    list-style: none;
+    background-color: #311e39;
+    transition: ease-in-out 0.1s;
+  }
+  nav .menu__list li:hover {
+    background-color: #4b3050;
+    transition: ease-in 0.1s;
+    border-radius: 0.625rem;
+    box-shadow: 0 0 0.75rem rgb(241, 184, 241);
+    z-index: 1;
+  }
+  nav .menu__list a {
+    width: 100%;
+    padding: 1rem;
     font-family: "Inter", "Tahoma", sans-serif;
-    font-size: 0.6rem;
+    font-size: 1rem;
     color: white;
     text-align: center;
     text-decoration: none;
   }
-  nav .menu__item:visited {
+  nav .menu__list a:visited {
     text-decoration: none;
-  }
-  nav .menu__icon {
-    display: none;
   }
 
   header {
