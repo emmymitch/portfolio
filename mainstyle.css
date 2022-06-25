@@ -4,7 +4,7 @@
   display: block;
   width: 3rem;
   height: 0.125rem;
-  background-color: #d9bea5;
+  background-color: #dbb4b1;
   margin-top: 0.5rem;
 }
 .line--large {
@@ -30,7 +30,7 @@
 .expander__list-item {
   width: 100%;
   padding: 1.4rem 0;
-  border-bottom: 0.125rem inset #453f3f;
+  border-bottom: 0.125rem inset #4b3050;
   font-family: "Cormorant", "Times New Roman", sans;
   font-size: 1rem;
   color: white;
@@ -73,12 +73,12 @@
   margin: 0.25rem;
   border: none;
   border-radius: 50%;
-  background-color: #3b3636;
+  background-color: #412846;
   color: white;
 }
 .card button:hover {
-  background-color: #453f3f;
-  box-shadow: 0 0 0.75rem #d9bea5;
+  background-color: #4b3050;
+  box-shadow: 0 0 0.75rem rgb(241, 184, 241);
   cursor: pointer;
 }
 .card button i {
@@ -91,7 +91,7 @@
   display: inline-block;
   margin-right: 0.15rem;
   padding: 0.25rem 1rem;
-  background-color: #3b3636;
+  background-color: #412846;
   font-family: "Inter", "Tahoma", sans-serif;
   font-size: 0.9rem;
   font-weight: bold;
@@ -100,8 +100,8 @@
   text-align: center;
 }
 .card__tag:hover {
-  background-color: #d9bea5;
-  color: #2C2A2A;
+  background-color: #dbb4b1;
+  color: #311e39;
   transition: ease-in-out 0.2s;
 }
 
@@ -112,7 +112,7 @@
 }
 
 body {
-  background-color: #2C2A2A;
+  background-color: #311e39;
 }
 
 nav {
@@ -132,7 +132,7 @@ nav .name {
 }
 nav .name span {
   padding: 0;
-  color: #d9bea5;
+  color: #dbb4b1;
 }
 nav .menu {
   margin: 1rem;
@@ -221,16 +221,16 @@ main #contact h1 {
 main #contact button {
   padding: 1.5rem 5rem;
   margin: 1.5rem;
-  background-color: #2C2A2A;
-  border: 2px solid #d9bea5;
+  background-color: #311e39;
+  border: 2px solid #dbb4b1;
   font-family: "Inter", "Tahoma", sans-serif;
   font-size: 1.125rem;
   text-transform: uppercase;
   color: white;
 }
 main #contact button:hover {
-  background-color: #453f3f;
-  box-shadow: 0 0 0.75rem #d9bea5;
+  background-color: #4b3050;
+  box-shadow: 0 0 0.75rem rgb(241, 184, 241);
   cursor: pointer;
 }
 
@@ -241,7 +241,7 @@ footer {
   width: 100%;
   height: 7rem;
   margin-top: 6rem;
-  background-color: #3b3636;
+  background-color: #412846;
 }
 footer button {
   width: 3rem;
@@ -250,11 +250,11 @@ footer button {
   margin: 0.5rem;
   border: none;
   border-radius: 50%;
-  background-color: #453f3f;
-  color: #d9bea5;
+  background-color: #4b3050;
+  color: white;
 }
 footer button:hover {
-  box-shadow: 0 0 0.75rem #d9bea5;
+  box-shadow: 0 0 0.75rem rgb(241, 184, 241);
   cursor: pointer;
 }
 footer button i {
@@ -355,19 +355,19 @@ footer button p {
   main #portfolio .card {
     margin: 0 0.5rem;
     padding-bottom: 1.5rem;
-    width: 25rem;
+    width: 23rem;
     flex-grow: 1;
   }
   main #about {
-    margin: 12rem 0;
-    padding: 0 6rem;
+    margin: 10rem 6%;
   }
+}
+@media screen and (min-width: 768px) and (min-width: 1024px) {
   main #about #profile {
     display: grid;
-    grid-template-columns: 35rem 1fr;
+    grid-template-columns: 1fr 1fr;
     -moz-column-gap: 4rem;
          column-gap: 4rem;
-    grid-template-rows: 1fr 5fr;
     justify-content: start;
   }
   main #about #profile .section-title {
@@ -378,20 +378,27 @@ footer button p {
   }
   main #about #profile img {
     grid-area: 1/2/3/3;
-    height: 33rem;
-    width: auto;
+    width: 90%;
+    height: auto;
+    justify-self: end;
   }
   main #about #profile p {
     grid-area: 2/1/3/2;
   }
+}
+@media screen and (min-width: 768px) {
   main #about #personal-information {
     display: flex;
     justify-content: space-between;
   }
+}
+@media screen and (min-width: 768px) {
   main #about .expander {
     display: inline-block;
     width: 45%;
   }
+}
+@media screen and (min-width: 768px) {
   main #contact h1 {
     font-size: 7rem;
   }

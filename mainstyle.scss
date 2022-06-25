@@ -122,7 +122,6 @@ main{
     #about{
         img{
             width: 100%;
-            //padding: 3rem 0;
         }
 
         p{
@@ -167,7 +166,7 @@ main{
 
             &:hover{
                 background-color: $colour-background-tertiary;
-                box-shadow: 0 0 0.75rem $colour-secondary;
+                box-shadow: 0 0 0.75rem $colour-hover;
                 cursor: pointer;
             }
         }
@@ -195,10 +194,10 @@ footer{
         border-radius: 50%;
 
         background-color: $colour-background-tertiary;
-        color: $colour-secondary;
+        color: $colour-primary;
 
         &:hover{
-            box-shadow: 0 0 0.75rem $colour-secondary;
+            box-shadow: 0 0 0.75rem $colour-hover;
             cursor: pointer;
         }
 

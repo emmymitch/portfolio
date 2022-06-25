@@ -108,39 +108,43 @@
             .card{
                 margin: 0 0.5rem;
                 padding-bottom: 1.5rem;
-                width: 25rem;
+                width: 23rem;
                 flex-grow: 1;
             }
         }
 
         #about{
-            margin: 12rem 0;
-            padding: 0 6rem;
+            margin: 10rem 6%;
 
-            #profile{
-                display: grid;
-                grid-template-columns: 35rem 1fr;
-                column-gap: 4rem;
-                grid-template-rows: 1fr 5fr;
-                justify-content: start;
+            @media screen and (min-width: 1024px){
 
-                .section-title{
-                    grid-area: 1/1/2/2;
-                    margin: 0;
-                    padding: 0;
-                    align-self: end;
-                }
-
-                img{
-                    grid-area: 1/2/3/3;
-                    height: 33rem;
-                    width: auto;
-                }
-
-                p{
-                    grid-area: 2/1/3/2;
+                #profile{
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    column-gap: 4rem;
+                    justify-content: start;
+    
+                    .section-title{
+                        grid-area: 1/1/2/2;
+                        margin: 0;
+                        padding: 0;
+                        align-self: end;
+                    }
+    
+                    img{
+                        grid-area: 1/2/3/3;
+                        //height: 33rem;
+                        width: 90%;
+                        height: auto;
+                        justify-self: end;
+                    }
+    
+                    p{
+                        grid-area: 2/1/3/2;
+                    }
                 }
             }
+
 
             #personal-information{
                 display: flex;
