@@ -185,11 +185,11 @@ nav .menu__list {
 nav .menu__list li {
   display: flex;
   align-items: center;
-  list-style: none;
   height: 3rem;
   width: 70vw;
   max-width: 17rem;
   background-color: #412846;
+  list-style: none;
   opacity: 95%;
 }
 nav .menu__list li:hover {
@@ -383,11 +383,7 @@ footer button p {
     transition: ease-in-out 0.1s;
   }
   nav .menu__list li:hover {
-    background-color: #4b3050;
-    transition: ease-in 0.1s;
-    border-radius: 0.625rem;
-    box-shadow: 0 0 0.75rem rgb(241, 184, 241);
-    z-index: 1;
+    background-color: #311e39;
   }
   nav .menu__list a {
     width: 100%;
@@ -400,6 +396,9 @@ footer button p {
   }
   nav .menu__list a:visited {
     text-decoration: none;
+  }
+  nav .menu__list a:hover {
+    color: #dbb4b1;
   }
 
   header {

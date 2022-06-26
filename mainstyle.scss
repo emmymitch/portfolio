@@ -17,10 +17,6 @@ body{
 
 // Navbar at top - menu is responsive icon on mobile
 nav{
-    // display: flex;
-    // align-items: center;
-    // justify-content: space-between;
-    
     margin: 1.5rem;
 
     & *{
@@ -32,6 +28,7 @@ nav{
         display: inline-block;
         padding-right: 5rem;
         padding-top: 0.5rem;
+
         font-family: $font-title;
         font-size: 1.3rem;
         text-transform: uppercase;
@@ -85,6 +82,7 @@ nav{
             justify-content: flex-end;
             align-items: center;
 
+            // Do not want absolute positioning to stay for bigger screens
             @media screen and (max-width:767px){
                 position: absolute;
                 top: 4rem;
@@ -93,18 +91,17 @@ nav{
 
             margin:0;
             padding:0;
-
             opacity: 0;
 
             li{
                 display: flex;
                 align-items: center;
-                list-style: none;
                 height: 3rem;
                 width: 70vw;
                 max-width: 17rem;
 
                 background-color: $colour-background-secondary;
+                list-style: none;
                 opacity: 95%;
 
                 &:hover{
@@ -121,7 +118,7 @@ nav{
                 color: $colour-primary;
                 text-align: center;
                 text-decoration: none;
-
+                
                 &:visited{
                     text-decoration: none;
                 }

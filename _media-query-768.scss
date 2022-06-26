@@ -1,4 +1,4 @@
-// Media Query - Larger screens/desktop //////////////////////////////////////////////////////////////////////
+// Media Query - Larger screens/desktop
 @media screen and (min-width:768px){
     
     // Navbar at top - expanded menu on bigger screens
@@ -42,11 +42,11 @@
                     transition: ease-in-out 0.1s;
 
                     &:hover{
-                        background-color: $colour-background-tertiary;
-                        transition: ease-in 0.1s;
-                        border-radius: 0.625rem;
-                        box-shadow: 0 0 0.75rem $colour-hover;
-                        z-index: 1;
+                        background-color: $colour-background-primary;
+                        // transition: ease-in 0.1s;
+                        // border-radius: 0.625rem;
+                        // box-shadow: 0 0 0.75rem $colour-hover;
+                        // z-index: 1;
                     }
                 }
 
@@ -62,6 +62,10 @@
     
                     &:visited{
                         text-decoration: none;
+                    }
+
+                    &:hover{
+                        color: $colour-secondary;
                     }
                 }
             }
