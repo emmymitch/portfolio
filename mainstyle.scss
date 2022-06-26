@@ -17,10 +17,6 @@ body{
 
 // Navbar at top - menu is responsive icon on mobile
 nav{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    
     margin: 1.5rem;
 
     & *{
@@ -29,6 +25,10 @@ nav{
 
     // Name
     .name{
+        display: inline-block;
+        padding-right: 5rem;
+        padding-top: 0.5rem;
+
         font-family: $font-title;
         font-size: 1.3rem;
         text-transform: uppercase;
@@ -42,15 +42,103 @@ nav{
 
     // Navigation Menu
     .menu{
-        margin: 1rem;
-        transform: scale(1.75);
+        display: inline-block;
+        background-color: $colour-background-primary;
 
-        &__item{
-            display: none;
+        input{
+            display: inline-block;
+            position: absolute;
+            right: 2.2rem;
+            top: 1.9rem;
+            width: 1rem;
+            height: 1rem;
+            z-index:1;
+
+            opacity: 0;
+            transform: scale(1.75);
+            cursor: pointer;
         }
 
         &__icon{
+            display: inline-block;
+            position: absolute;
+            right: 2rem;
+            top: 1.9rem;
+
             color: $colour-primary;
+            opacity: 100;
+            transform: scale(1.75);
+
+            &--close{
+                top: 1.9rem;
+                opacity: 0;
+                transform: scale(1);
+            }
+        }
+
+        &__list{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: center;
+
+            // Do not want absolute positioning to stay for bigger screens
+            @media screen and (max-width:767px){
+                position: absolute;
+                top: 4rem;
+                right: 2.2rem;
+            }
+
+            margin:0;
+            padding:0;
+            opacity: 0;
+
+            li{
+                display: flex;
+                align-items: center;
+                height: 3rem;
+                width: 70vw;
+                max-width: 17rem;
+
+                background-color: $colour-background-secondary;
+                list-style: none;
+                opacity: 95%;
+
+                &:hover{
+                    background-color: $colour-background-tertiary;
+                }
+            }
+
+            a{
+                width: 100%;
+                padding: 1rem;
+
+                font-family: $font-body;
+                font-size: 1rem;
+                color: $colour-primary;
+                text-align: center;
+                text-decoration: none;
+                
+                &:visited{
+                    text-decoration: none;
+                }
+            }
+        }
+
+        input:checked{
+            ~.menu{
+                &__list{
+                width: auto;
+                opacity: 95%;
+                transition: ease-in-out 0.15s;
+                }
+                &__icon{
+                    opacity: 0;
+                }
+                &__icon--close{
+                    opacity: 100;
+                }
+            }
         }
     }
 }
@@ -158,6 +246,7 @@ main{
 
             background-color: $colour-background-primary;
             border: 2px solid $colour-secondary;
+            border-radius: 0.625rem;
             transition: ease-in-out 0.1s;
 
             font-family: $font-body;
