@@ -131,12 +131,31 @@
                         align-self: end;
                     }
     
-                    img{
+                    .picture{
                         grid-area: 1/2/3/3;
                         //height: 33rem;
                         width: 90%;
                         height: auto;
                         justify-self: end;
+
+                        position: relative;
+                        top: 0;
+                        left: 0;
+
+                        #self{
+                            position: relative;
+                            top: 0;
+                            left: 0;
+                        }
+
+                        #dotGrid{
+                            display: inline-block;
+                            position: absolute;
+                            top: -10%;
+                            left: 80%;
+                            z-index: 1;
+                            transform: scale(75%);
+                        }
                     }
     
                     p{

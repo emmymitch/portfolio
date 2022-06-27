@@ -120,8 +120,13 @@ main{
 
     // About Me
     #about{
-        img{
-            width: 100%;
+        .picture{
+            #self{
+                width:100%;
+            }
+            #dotGrid{
+                display: none;
+            }
         }
 
         p{

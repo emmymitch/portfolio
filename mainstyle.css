@@ -196,8 +196,11 @@ main #portfolio .arrow-right-down {
 main #portfolio #card-4, main #portfolio #card-5, main #portfolio #card-6 {
   display: none;
 }
-main #about img {
+main #about .picture #self {
   width: 100%;
+}
+main #about .picture #dotGrid {
+  display: none;
 }
 main #about p {
   padding: 3rem 0;
@@ -380,11 +383,27 @@ footer button p {
     padding: 0;
     align-self: end;
   }
-  main #about #profile img {
+  main #about #profile .picture {
     grid-area: 1/2/3/3;
     width: 90%;
     height: auto;
     justify-self: end;
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+  main #about #profile .picture #self {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+  main #about #profile .picture #dotGrid {
+    display: inline-block;
+    position: absolute;
+    top: -10%;
+    left: 80%;
+    z-index: 1;
+    transform: scale(75%);
   }
   main #about #profile p {
     grid-area: 2/1/3/2;
