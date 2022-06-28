@@ -111,6 +111,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -393,6 +394,7 @@ footer button p {
     background-color: #311e39;
   }
   nav .menu__list a {
+    display: inline-block;
     width: 100%;
     padding: 1rem;
     font-family: "Inter", "Tahoma", sans-serif;
