@@ -35,12 +35,12 @@
   font-size: 1rem;
   color: white;
 }
-.expander__list-item__clickable {
+.expander__list-item--clickable {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.expander__list-item__expand {
+.expander__list-item--expand {
   display: none;
 }
 
@@ -196,6 +196,7 @@ nav .menu__list li:hover {
   background-color: #4b3050;
 }
 nav .menu__list a {
+  display: none;
   width: 100%;
   padding: 1rem;
   font-family: "Inter", "Tahoma", sans-serif;
@@ -211,6 +212,9 @@ nav .menu input:checked ~ .menu__list {
   width: auto;
   opacity: 95%;
   transition: ease-in-out 0.15s;
+}
+nav .menu input:checked ~ .menu__list a {
+  display: inline-block;
 }
 nav .menu input:checked ~ .menu__icon {
   opacity: 0;
