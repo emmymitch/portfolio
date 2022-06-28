@@ -18,19 +18,17 @@
             <input type="checkbox">
             <i class="fa-solid fa-bars menu__icon"></i>
             <i class="fa-solid fa-x menu__icon menu__icon--close"></i>
-            <div class="menu__list">
+            <ul class="menu__list">
                 <li><a tabindex=1 class="menu__item" href="#about">About</a></li>
                 <li><a tabindex=2 class="menu__item" href="#portfolio">Portfolio</a></li>
                 <li><a tabindex=3 class="menu__item" href="#contact">Contact</a></li>
-            </div>
+            </ul>
         </div>
     </nav>    
 
     <header>
         <h1>Junior Software Developer.</h1>
-
         <div class="line line--large"></div>
-
         <p id="introduction">
             Hi, I'm Emily! I'm a junior software developer based in Suffolk, currently
             on a 12-week coding course with _nology. Take a look at my work!
@@ -45,7 +43,7 @@
             </div>
 
             <div id="project-cards">
-                <article class="card" id="card-1">
+                <section class="card" id="card-1">
                     <img tabindex=4 class="card__img" src=" ./images/stars.jpg" alt="Project 1"> 
                     <div class="card__description">
                         <div class="card__title">
@@ -63,9 +61,9 @@
                         <p class="card__tag">React</p>
                         <p class="card__tag">SCSS</p>
                     </div>
-                </article>
+                </section>
 
-                <article class="card" id="card-2">
+                <section class="card" id="card-2">
                     <img tabindex=7 class="card__img" src=" ./images/stars.jpg" alt="Project 2"> 
                     <div class="card__description">
                         <div class="card__title">
@@ -83,9 +81,9 @@
                         <p class="card__tag">React</p>
                         <p class="card__tag">SCSS</p>
                     </div>
-                </article>
+                </section>
 
-                <article class="card" id="card-3">
+                <section class="card" id="card-3">
                     <img tabindex=10 class="card__img" src=" ./images/stars.jpg" alt="Project 3"> 
                     <div class="card__description">
                         <div class="card__title">
@@ -103,9 +101,9 @@
                         <p class="card__tag">React</p>
                         <p class="card__tag">SCSS</p>
                     </div>
-                </article>
+                </section>
 
-                <article class="card" id="card-4">
+                <section class="card" id="card-4">
                     <img tabindex=13 class="card__img" src=" ./images/stars.jpg" alt="Project 4"> 
                     <div class="card__description">
                         <div class="card__title">
@@ -123,9 +121,9 @@
                         <p class="card__tag">React</p>
                         <p class="card__tag">SCSS</p>
                     </div>
-                </article>
+                </section>
 
-                <article class="card" id="card-5">
+                <section class="card" id="card-5">
                     <img tabindex=16 class="card__img" src=" ./images/stars.jpg" alt="Project 5"> 
                     <div class="card__description">
                         <div class="card__title">
@@ -143,9 +141,9 @@
                         <p class="card__tag">React</p>
                         <p class="card__tag">SCSS</p>
                     </div>
-                </article>
+                </section>
 
-                <article class="card" id="card-6">
+                <section class="card" id="card-6">
                     <img tabindex=19 class="card__img" src=" ./images/stars.jpg" alt="Project 6"> 
                     <div class="card__description">
                         <div class="card__title">
@@ -163,7 +161,7 @@
                         <p class="card__tag">React</p>
                         <p class="card__tag">SCSS</p>
                     </div>
-                </article>
+                </section>
             </div>
         </section>
 
@@ -179,7 +177,7 @@
                     <img id="dotGrid" src="./images/dot-grid-col2.svg" alt="A grid of coloured dots, 10 high and 14 wide">
                 </div>
 
-                <p tabindex=22>
+                <p id="about-text" tabindex=22>
                     Hi, I'm Emily! I'm a cheerful and adaptable junior software developer excited to get into the 
                     technology sector. Currently I'm based in Suffolk, UK, but am willing and eager to relocate.
                 <br><br>
@@ -205,7 +203,6 @@
                                 <h4 class="expander__subtitle">Trainee Software Developer @ _nology</h4>
                                 <i tabindex=23 class="fa-solid fa-plus expander__expand-icon"></i>
                             </div>
-
                             <div class="expander__list-item__expand">
                                 <p class="expander__list-item__date">June - Sept 2022</p>
                                 <ul class="expander__description">

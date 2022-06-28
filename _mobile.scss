@@ -1,0 +1,304 @@
+// Navbar at top - menu is responsive icon on mobile
+nav{
+    margin: 1.5rem;
+
+    & *{
+        padding: 0.25rem;
+    }
+
+    // Name
+    .name{
+        display: inline-block;
+        padding-right: 5rem;
+        padding-top: 0.5rem;
+
+        font-family: $font-title;
+        font-size: 1.3rem;
+        text-transform: uppercase;
+        color: $colour-primary;
+
+        span{
+            padding: 0;
+            color: $colour-secondary;
+        }
+    }
+
+    // Navigation Menu
+    .menu{
+        display: inline-block;
+        background-color: $colour-background-primary;
+
+        input{
+            display: inline-block;
+            position: absolute;
+            right: 2.2rem;
+            top: 1.9rem;
+            width: 1rem;
+            height: 1rem;
+            z-index:1;
+
+            opacity: 0;
+            transform: scale(1.75);
+            cursor: pointer;
+        }
+
+        &__icon{
+            display: inline-block;
+            position: absolute;
+            right: 2rem;
+            top: 1.9rem;
+
+            color: $colour-primary;
+            opacity: 100;
+            transform: scale(1.75);
+
+            &--close{
+                top: 1.9rem;
+                opacity: 0;
+                transform: scale(1);
+            }
+        }
+
+        &__list{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: center;
+
+            // Do not want absolute positioning to stay for bigger screens
+            @media screen and (max-width:767px){
+                position: absolute;
+                top: 4rem;
+                right: 2.2rem;
+            }
+
+            margin:0;
+            padding:0;
+            opacity: 0;
+
+            li{
+                display: flex;
+                align-items: center;
+                height: 3rem;
+                width: 70vw;
+                max-width: 17rem;
+
+                background-color: $colour-background-secondary;
+                list-style: none;
+                opacity: 95%;
+
+                &:hover{
+                    background-color: $colour-background-tertiary;
+                }
+            }
+
+            a{
+                display: none;
+                width: 100%;
+                padding: 1rem;
+
+                font-family: $font-body;
+                font-size: 1rem;
+                color: $colour-primary;
+                text-align: center;
+                text-decoration: none;
+                
+                &:visited{
+                    text-decoration: none;
+                }
+            }
+        }
+
+        input:checked{
+            ~.menu{
+                &__list{
+                    //display: flex;
+                    width: auto;
+                    opacity: 95%;
+                    transition: ease-in-out 0.15s;
+
+                    a{
+                        display: inline-block;
+                    }
+                }
+                &__icon{
+                    opacity: 0;
+                }
+                &__icon--close{
+                    opacity: 100;
+                }
+            }
+        }
+    }
+}
+
+// Header styles - title and intro paragraph
+header{
+    margin: 1.5rem;
+
+    // Large title
+    h1{
+        padding: 2.5rem 0;
+        font-family: $font-title;
+        font-size: 5rem;
+        font-weight: 400;
+        color: $colour-primary;
+    }
+
+    .line{
+        margin: 1.5rem;
+    }
+
+    #introduction{
+        padding-top: 1rem;
+        font-family: $font-body;
+        font-size: 1rem;
+        color: $colour-primary;
+        line-height: 160%;
+    }
+}
+
+main{
+    margin: 1.5rem;
+
+    // Section Titles
+    .section-title{
+        margin-top: 8rem;
+        margin-bottom: 4rem;
+
+        h2{
+            padding: 0.3125px 0;
+
+            font-family: $font-title;
+            font-size: 2rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: $colour-primary;
+        }
+    }
+
+    // Portfolio
+    #portfolio{
+        margin: 2.5rem 0;
+
+        h2{
+            display: inline-block;
+        }
+
+        .arrow-right-down{
+            transform: scale(0.5);
+            vertical-align: bottom;
+        }
+
+        #card-4, #card-5, #card-6{
+            display: none;
+        }
+    }
+
+    // About Me
+    #about{
+        .picture{
+            #self{
+                width:100%;
+            }
+            #dotGrid{
+                display: none;
+            }
+        }
+
+        p{
+            padding: 3rem 0;
+            font-family: $font-body;
+            font-size: 1rem;
+            color: $colour-primary;
+            line-height: 160%;
+        }
+
+    }
+
+    #contact{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        // Very big 'Get in Touch'
+        h1{
+            margin: 2rem;
+
+            font-family: $font-title;
+            font-size: 5rem;
+            font-weight: 400;
+            color: $colour-primary;
+            text-align: center;
+        }
+
+        // Big 'Contact Me' button
+        button{
+            padding: 1.5rem 5rem;
+            margin: 1.5rem;
+
+            background-color: $colour-background-primary;
+            border: 2px solid $colour-secondary;
+            border-radius: 0.625rem;
+            transition: ease-in-out 0.1s;
+
+            font-family: $font-body;
+            font-size: 1.125rem;
+            text-transform: uppercase;
+            color: $colour-primary;
+
+            &:hover{
+                background-color: $colour-background-tertiary;
+                box-shadow: 0 0 0.75rem $colour-hover;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 7rem;
+    margin-top: 6rem;
+
+    background-color: $colour-background-secondary;
+
+    button{
+        width: 3rem;
+        height: 3rem;
+        padding: 1rem;
+        margin: 0.5rem;
+
+        border: none;
+        border-radius: 50%;
+
+        background-color: $colour-background-tertiary;
+        color: $colour-primary;
+        transition: ease-in-out 0.1s;
+
+        &:hover{
+            box-shadow: 0 0 0.75rem $colour-hover;
+            cursor: pointer;
+        }
+
+        i{
+            transform: scale(2);
+        }
+
+        p{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            font-family: sans-serif;
+            font-size: 1rem;
+            font-weight: 700;
+            transform: scale(1.4);
+        }
+    }
+}
