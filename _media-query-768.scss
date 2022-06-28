@@ -43,6 +43,7 @@
 
                     &:hover{
                         background-color: $colour-background-primary;
+                        //Kept in case I want to change my buttons back
                         // transition: ease-in 0.1s;
                         // border-radius: 0.625rem;
                         // box-shadow: 0 0 0.75rem $colour-hover;
@@ -157,7 +158,6 @@
     
                     .picture{
                         grid-area: 1/2/3/3;
-                        //height: 33rem;
                         width: 90%;
                         height: auto;
                         justify-self: end;
