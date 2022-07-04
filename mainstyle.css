@@ -67,10 +67,15 @@
   justify-content: space-between;
   align-items: center;
 }
+.card__buttons {
+  display: flex;
+}
 .card__button {
-  width: 5rem;
-  height: 5rem;
+  width: 3rem;
+  height: 3rem;
   margin: 0.25rem;
+  display: flex;
+  align-items: center;
   border: none;
   border-radius: 50%;
   background-color: #412846;
@@ -83,7 +88,8 @@
   cursor: pointer;
 }
 .card__button img {
-  transform: scale(0.75);
+  transform: scale(0.5);
+  filter: invert(100%);
 }
 .card__tag-list {
   margin: 0.5rem 0;
@@ -343,8 +349,8 @@ main .contact button:hover {
   cursor: pointer;
 }
 .footer a img {
-  transform: scale(1.75);
-  fill: white;
+  transform: scale(1.6);
+  filter: invert(100%);
 }
 .footer a #cv {
   padding: 0;

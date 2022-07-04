@@ -287,8 +287,8 @@ main{
         }
 
         img{
-            transform: scale(1.75);
-            fill: $colour-primary;
+            transform: scale(1.6);
+            filter: invert(100%);
         }
 
         #cv{
