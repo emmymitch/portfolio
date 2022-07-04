@@ -292,14 +292,22 @@ main{
         }
 
         #cv{
+            //margin: 0;
+            padding: 0;
             display: flex;
             justify-content: center;
             align-items: center;
 
-            font-family: sans-serif;
+            //font-family: sans-serif;
+            font-family: $font-body;
             font-size: 1rem;
             font-weight: 700;
             transform: scale(1.4);
+            text-decoration: none;
+
+            &:visited{
+                text-decoration: none;
+            }
         }
     }
 }
