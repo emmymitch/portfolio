@@ -27,6 +27,11 @@
 .expander__subtitle {
   display: inline-block;
 }
+.expander__icon {
+  filter: invert(100%);
+  width: 1rem;
+  margin-right: 1rem;
+}
 .expander__list-item {
   width: 100%;
   padding: 1.4rem 0;

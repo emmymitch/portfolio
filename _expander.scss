@@ -18,6 +18,11 @@
         display: inline-block;
     }
 
+    &__icon{
+        filter: invert(100%);
+        width: 1rem;
+        margin-right: 1rem;
+    }
 
     &__list-item{
         width: 100%;
