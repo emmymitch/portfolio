@@ -268,7 +268,7 @@ main{
 
     background-color: $colour-background-secondary;
 
-    a{
+    &__link{
         width: 3rem;
         height: 3rem;
         padding: 1rem;
@@ -287,27 +287,32 @@ main{
         }
 
         img{
-            transform: scale(1.6);
             filter: invert(100%);
         }
 
-        #cv{
-            //margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+    }
 
-            //font-family: sans-serif;
-            font-family: $font-body;
-            font-size: 1rem;
-            font-weight: 700;
-            transform: scale(1.4);
+    #linkedIn{
+        img{transform: scale(1.4);}
+    }
+
+    #github{
+        img{transform: scale(1.6);}
+    }
+
+    #cv{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        font-family: sans-serif;
+        font-family: $font-body;
+        font-size: 1.3rem;
+        font-weight: 700;
+        text-decoration: none;
+
+        &:visited{
             text-decoration: none;
-
-            &:visited{
-                text-decoration: none;
-            }
         }
     }
 }

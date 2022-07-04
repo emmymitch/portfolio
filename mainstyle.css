@@ -333,7 +333,7 @@ main .contact button:hover {
   margin-top: 6rem;
   background-color: #412846;
 }
-.footer a {
+.footer__link {
   width: 3rem;
   height: 3rem;
   padding: 1rem;
@@ -344,26 +344,30 @@ main .contact button:hover {
   color: white;
   transition: ease-in-out 0.1s;
 }
-.footer a:hover {
+.footer__link:hover {
   box-shadow: 0 0 0.75rem rgb(241, 184, 241);
   cursor: pointer;
 }
-.footer a img {
-  transform: scale(1.6);
+.footer__link img {
   filter: invert(100%);
 }
-.footer a #cv {
-  padding: 0;
+.footer #linkedIn img {
+  transform: scale(1.4);
+}
+.footer #github img {
+  transform: scale(1.6);
+}
+.footer #cv {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: sans-serif;
   font-family: "Inter", "Tahoma", sans-serif;
-  font-size: 1rem;
+  font-size: 1.3rem;
   font-weight: 700;
-  transform: scale(1.4);
   text-decoration: none;
 }
-.footer a #cv:visited {
+.footer #cv:visited {
   text-decoration: none;
 }
 
