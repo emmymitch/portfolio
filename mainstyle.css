@@ -162,16 +162,17 @@ nav .menu input {
 nav .menu__icon {
   display: inline-block;
   position: absolute;
-  right: 2rem;
-  top: 1.9rem;
+  right: 1.6rem;
+  top: 1.2rem;
+  width: 2.2rem;
   color: white;
+  filter: invert(100%);
   opacity: 100;
-  transform: scale(1.75);
 }
 nav .menu__icon--close {
-  top: 1.9rem;
+  transform: scale(0.75);
+  top: 0.9rem;
   opacity: 0;
-  transform: scale(1);
 }
 nav .menu__list {
   display: flex;
@@ -438,7 +439,7 @@ main .contact button:hover {
     margin-top: -1.5rem;
     margin-bottom: 1.5rem;
   }
-  header #introduction {
+  header .introduction {
     padding-top: 1rem;
     width: 40%;
     font-family: "Inter", "Tahoma", sans-serif;
