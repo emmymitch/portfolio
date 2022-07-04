@@ -112,7 +112,7 @@
         }
 
         // Desktop portfolio
-        #portfolio{
+        .portfolio{
             margin: 0;
 
             .arrow-right-down{
@@ -124,7 +124,7 @@
                 display: inline-block;
             }
             
-            #project-cards{
+            .project-cards{
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
@@ -139,12 +139,12 @@
             }
         }
 
-        #about{
+        .about{
             margin: 10rem 6%;
 
             @media screen and (min-width: 1024px){
 
-                #profile{
+                .profile{
                     display: grid;
                     grid-template-columns: 1fr 1fr;
                     column-gap: 4rem;
@@ -167,13 +167,13 @@
                         top: 0;
                         left: 0;
 
-                        #self{
+                        .self{
                             position: relative;
                             top: 0;
                             left: 0;
                         }
 
-                        #dotGrid{
+                        .dotGrid{
                             display: inline-block;
                             position: absolute;
                             top: -10%;
@@ -190,7 +190,7 @@
             }
 
 
-            #personal-information{
+            .personal-information{
                 display: flex;
                 justify-content: space-between;
             }
