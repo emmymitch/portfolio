@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Emily Mitcheson-Smith - Junior Software Developer</title>
-    <script src="https://kit.fontawesome.com/ebbb7acf79.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="mainstyle.css">
 </head>
 
@@ -17,12 +16,18 @@
 
         <div class="menu">
             <input type="checkbox"> <!-- acts as trigger for hamburger menu-->
-            <i class="fa-solid fa-bars menu__icon"></i>
-            <i class="fa-solid fa-x menu__icon menu__icon--close"></i>
+            <img class="menu__icon" src="./assets/icons/bars-icon.svg" alt="3 parallel horizontal bars. Click to open navigation menu">
+            <img class="menu__icon menu__icon--close" src="./assets/icons/x-icon.svg" alt="X icon. Click to close navigation menu">
             <ul class="menu__list">
-                <li><a tabindex=1 class="menu__item" href="#about">About</a></li>
-                <li><a tabindex=2 class="menu__item" href="#portfolio">Portfolio</a></li>
-                <li><a tabindex=3 class="menu__item" href="#contact">Contact</a></li>
+                <li>
+                    <a tabindex=1 class="menu__item" href="#about">About</a>
+                </li>
+                <li>
+                    <a tabindex=2 class="menu__item" href="#portfolio">Portfolio</a>
+                </li>
+                <li>
+                    <a tabindex=3 class="menu__item" href="#contact">Contact</a>
+                </li>
             </ul>
         </div>
     </nav>    
@@ -30,7 +35,7 @@
     <header>
         <h1>Junior Software Developer.</h1>
         <div class="line line--large"></div>
-        <p id="introduction">
+        <p class="introduction">
             Hi, I'm Emily! I'm a junior software developer based in Suffolk, currently
             on a 12-week coding course with _nology. Take a look at my work!
         </p>
@@ -38,24 +43,32 @@
 
     <main>
         <!-- Portfolio section - project showcase -->
-        <section id="portfolio">
+        <section class="portfolio">
             <div class="section-title">
                 <h2>Portfolio</h2>
-                <img class="arrow-right-down" src="./images/arrow-right-curve-down.svg" alt="Curved arrow pointing from title to associated content">
+                <img class="arrow-right-down" src="./assets/images/arrow-right-curve-down.svg" 
+                    alt="Curved arrow pointing from title to associated content">
             </div>
 
-            <div id="project-cards">
+            <div class="project-cards">
                 <section class="card" id="card-1">
-                    <img tabindex=4 class="card__img" src=" ./images/stars.jpg" alt="Project 1"> 
+                    <img tabindex=4 class="card__img" src=" ./assets/images/calculator-project-img.png"
+                        alt="A screenshot of my calculator from project 1."> 
                     <div class="card__description">
                         <div class="card__title">
-                            <h3>Project 1</h3>
+                            <h3>Simple Javascript Calculator</h3>
                             <div class="line"></div>
                         </div>
 
                         <div class="card__buttons">
-                            <button tabindex=5> <i class="fa-regular fa-eye"></i> </button>
-                            <button tabindex=6 onclick="window.open('https://github.com/emmymitch')"> <i class="fa-solid fa-code"></i> </button>
+                            <a class="card__button" href="https://emmymitch.github.io/calculator/" tabindex=5>
+                                <img src="./assets/icons/eye-icon.svg" alt="An eye. Click to inspect
+                                the published project." />
+                            </a>
+                            <a class="card__button" href="https://github.com/emmymitch/calculator" tabindex=6>
+                                <img src="./assets/icons/code-icon.svg" alt="A forward slash enclosed
+                                    in greater than and less than symbols. Leads to github project page" />
+                            </a>
                         </div>
                     </div>
 
@@ -66,7 +79,7 @@
                 </section>
 
                 <section class="card" id="card-2">
-                    <img tabindex=7 class="card__img" src=" ./images/stars.jpg" alt="Project 2"> 
+                    <img tabindex=7 class="card__img" src=" ./assets/images/stars.jpg" alt="Project 2"> 
                     <div class="card__description">
                         <div class="card__title">
                             <h3>Project 2</h3>
@@ -74,8 +87,14 @@
                         </div>
 
                         <div class="card__buttons">
-                            <button tabindex=8> <i class="fa-regular fa-eye"></i> </button>
-                            <button tabindex=9 onclick="window.open('https://github.com/emmymitch')"> <i class="fa-solid fa-code"></i> </button>
+                            <a class="card__button" href="#inspect" tabindex=8>
+                                <img src="./assets/icons/eye-icon.svg" alt="An eye. Click to inspect
+                                the published project." />
+                            </a>
+                            <a class="card__button" href="https://github.com/emmymitch" tabindex=9>
+                                <img src="./assets/icons/code-icon.svg" alt="A forward slash enclosed
+                                    in greater than and less than symbols. Leads to github project page" />
+                            </a>
                         </div>
                     </div>
 
@@ -86,7 +105,7 @@
                 </section>
 
                 <section class="card" id="card-3">
-                    <img tabindex=10 class="card__img" src=" ./images/stars.jpg" alt="Project 3"> 
+                    <img tabindex=10 class="card__img" src=" ./assets/images/stars.jpg" alt="Project 3"> 
                     <div class="card__description">
                         <div class="card__title">
                             <h3>Project 3</h3>
@@ -94,8 +113,14 @@
                         </div>
 
                         <div class="card__buttons">
-                            <button tabindex=11> <i class="fa-regular fa-eye"></i> </button>
-                            <button tabindex=12 onclick="window.open('https://github.com/emmymitch')"> <i class="fa-solid fa-code"></i> </button>
+                            <a class="card__button" href="#inspect" tabindex=11>
+                                <img src="./assets/icons/eye-icon.svg" alt="An eye. Click to inspect
+                                the published project." />
+                            </a>
+                            <a class="card__button" href="https://github.com/emmymitch" tabindex=12>
+                                <img src="./assets/icons/code-icon.svg" alt="A forward slash enclosed
+                                    in greater than and less than symbols. Leads to github project page" />
+                            </a>
                         </div>
                     </div>
 
@@ -106,7 +131,7 @@
                 </section>
 
                 <section class="card" id="card-4">
-                    <img tabindex=13 class="card__img" src=" ./images/stars.jpg" alt="Project 4"> 
+                    <img tabindex=13 class="card__img" src=" ./assets/images/stars.jpg" alt="Project 4"> 
                     <div class="card__description">
                         <div class="card__title">
                             <h3>Project 4</h3>
@@ -114,8 +139,14 @@
                         </div>
 
                         <div class="card__buttons">
-                            <button tabindex=14 > <i class="fa-regular fa-eye"></i> </button>
-                            <button tabindex=15 onclick="window.open('https://github.com/emmymitch')"> <i class="fa-solid fa-code"></i> </button>
+                            <a class="card__button" href="#inspect" tabindex=14>
+                                <img src="./assets/icons/eye-icon.svg" alt="An eye. Click to inspect
+                                the published project." />
+                            </a>
+                            <a class="card__button" href="https://github.com/emmymitch" tabindex=15>
+                                <img src="./assets/icons/code-icon.svg" alt="A forward slash enclosed
+                                    in greater than and less than symbols. Leads to github project page" />
+                            </a>
                         </div>
                     </div>
 
@@ -126,7 +157,7 @@
                 </section>
 
                 <section class="card" id="card-5">
-                    <img tabindex=16 class="card__img" src=" ./images/stars.jpg" alt="Project 5"> 
+                    <img tabindex=16 class="card__img" src=" ./assets/images/stars.jpg" alt="Project 5"> 
                     <div class="card__description">
                         <div class="card__title">
                             <h3>Project 5</h3>
@@ -134,8 +165,14 @@
                         </div>
 
                         <div class="card__buttons">
-                            <button tabindex=17> <i class="fa-regular fa-eye"></i> </button>
-                            <button tabindex=18 onclick="window.open('https://github.com/emmymitch')"> <i class="fa-solid fa-code"></i> </button>
+                            <a class="card__button" href="#inspect" tabindex=17>
+                                <img src="./assets/icons/eye-icon.svg" alt="An eye. Click to inspect
+                                the published project." />
+                            </a>
+                            <a class="card__button" href="https://github.com/emmymitch" tabindex=18>
+                                <img src="./assets/icons/code-icon.svg" alt="A forward slash enclosed
+                                    in greater than and less than symbols. Leads to github project page" />
+                            </a>
                         </div>
                     </div>
 
@@ -146,7 +183,7 @@
                 </section>
 
                 <section class="card" id="card-6">
-                    <img tabindex=19 class="card__img" src=" ./images/stars.jpg" alt="Project 6"> 
+                    <img tabindex=19 class="card__img" src=" ./assets/images/stars.jpg" alt="Project 6"> 
                     <div class="card__description">
                         <div class="card__title">
                             <h3>Project 6</h3>
@@ -154,8 +191,14 @@
                         </div>
 
                         <div class="card__buttons">
-                            <button tabindex=20> <i class="fa-regular fa-eye"></i> </button>
-                            <button tabindex=21 onclick="window.open('https://github.com/emmymitch')"> <i class="fa-solid fa-code"></i> </button>
+                            <a class="card__button" href="#inspect" tabindex=20>
+                                <img src="./assets/icons/eye-icon.svg" alt="An eye. Click to inspect
+                                the published project." />
+                            </a>
+                            <a class="card__button" href="https://github.com/emmymitch" tabindex=21>
+                                <img src="./assets/icons/code-icon.svg" alt="A forward slash enclosed
+                                    in greater than and less than symbols. Leads to github project page" />
+                            </a>
                         </div>
                     </div>
 
@@ -168,19 +211,19 @@
         </section>
 
         <!-- Personal profile - text description, photo -->
-        <section id="about">
-            <div id="profile">
+        <section class="about">
+            <div class="profile">
                 <div class="section-title">
                     <h2>About.</h2>
                     <div class="line"></div>
                 </div>
 
                 <div class="picture">
-                    <img id="self" src="./images/emily-mycenae.jpg" alt="Emily cheering under a stone arch in ancient Mycenae">
-                    <img id="dotGrid" src="./images/dot-grid-col2.svg" alt="A grid of coloured dots, 10 high and 14 wide">
+                    <img class="self" src="./assets/images/emily-mycenae.jpg" alt="Emily cheering under a stone arch in ancient Mycenae">
+                    <img class="dotGrid" src="./assets/images/dot-grid-col2.svg" alt="A grid of coloured dots, 10 high and 14 wide">
                 </div>
 
-                <p id="about-text" tabindex=22>
+                <p class="about-text" tabindex=22>
                     Hi, I'm Emily! I'm a cheerful and adaptable junior software developer excited to get into the 
                     technology sector. Currently I'm based in Suffolk, UK, but am willing and eager to relocate.
                 <br><br>
@@ -196,7 +239,7 @@
             </div>
             
             <!-- Information more than just a short blurb -->
-            <div id="personal-information">
+            <div class="personal-information">
                 <div class="expander" id="experience">
                     <h3 class="expander__title">Experience</h3>
                     <div class="line"></div>
@@ -205,7 +248,8 @@
                         <div class="expander__list-item">
                             <div class="expander__list-item--clickable">
                                 <h4 class="expander__subtitle">Trainee Software Developer @ _nology</h4>
-                                <i tabindex=23 class="fa-solid fa-plus expander__expand-icon"></i>
+                                <img class="expander__icon expander__icon--expand" tabindex="23" src="./assets/icons/plus-icon.svg" 
+                                    alt="A plus symbol. Click to expand on my time at nology">
                             </div>
                             <div class="expander__list-item--expand">
                                 <p class="expander__list-item--date">June - Sept 2022</p>
@@ -220,7 +264,8 @@
                         <div class="expander__list-item">
                             <div class="expander__list-item--clickable">
                                 <h4 class="expander__subtitle">Food & Beverage Team Member @ National Trust</h4>
-                                <i tabindex=24 class="fa-solid fa-plus expander__expand-icon"></i>
+                                <img class="expander__icon expander__icon--expand" tabindex="24" src="./assets/icons/plus-icon.svg" 
+                                    alt="A plus symbol. Click to expand on my time at National Trust">
                             </div>
 
                             <div class="expander__list-item--expand">
@@ -235,7 +280,8 @@
                         <div class="expander__list-item">
                             <div class="expander__list-item--clickable">
                                 <h4 class="expander__subtitle">Physics Masters' Student @ University of Southampton</h4>
-                                <i tabindex=25 class="fa-solid fa-plus expander__expand-icon"></i>
+                                <img class="expander__icon expander__icon--expand" tabindex="25" src="./assets/icons/plus-icon.svg" 
+                                    alt="A plus symbol. Click to expand on my time at the University of Southampton">
                             </div>
 
                             <div class="expander__list-item--expand">
@@ -264,7 +310,8 @@
                         <div class="expander__list-item">
                             <div class="expander__list-item--clickable">
                                 <h4 class="expander__subtitle">Gaming</h4>
-                                <i tabindex=26 class="fa-solid fa-plus"></i>
+                                <img class="expander__icon expander__icon--expand" tabindex="26" src="./assets/icons/plus-icon.svg" 
+                                    alt="A plus symbol. Click to expand Gaming">
                             </div>
 
                             <div class="expander__list-item--expand">
@@ -278,7 +325,8 @@
                         <div class="expander__list-item">
                             <div class="expander__list-item--clickable">
                                 <h4 class="expander__subtitle">Greek Mythology</h4>
-                                <i tabindex=27 class="fa-solid fa-plus"></i>
+                                <img class="expander__icon expander__icon--expand" tabindex="27" src="./assets/icons/plus-icon.svg" 
+                                    alt="A plus symbol. Click to expand Greek Mythology">
                             </div>
 
                             <div class="expander__list-item--expand">
@@ -294,7 +342,8 @@
                         <div class="expander__list-item">
                             <div class="expander__list-item--clickable">
                                 <h4 class="expander__subtitle">Astroparticle Physics</h4>
-                                <i tabindex=28 class="fa-solid fa-plus"></i>
+                                <img class="expander__icon expander__icon--expand" tabindex="28" src="./assets/icons/plus-icon.svg" 
+                                    alt="A plus symbol. Click to expand Astroparticle Physics">
                             </div>
 
                             <div class="expander__list-item--expand">
@@ -309,17 +358,24 @@
             </div>
         </section>
 
-        <section id="contact">
+        <section class="contact">
             <h1>Get in Touch.</h1>
             <button onclick="window.location.href='mailto:emilyms25@hotmail.co.uk';">Contact</button>
         </section>
     </main>
 
-    <footer>
-        <button onclick="window.open('https://www.linkedin.com/in/emily-mitchesonsmith/')"> <i class="fa-brands fa-linkedin-in"></i> </button>
-        <button onclick="window.open('https://github.com/emmymitch')"> <i class="fa-brands fa-github"></i> </button>
-        <button onclick="window.open('./CV Emily Mitcheson-Smith.pdf')"><p id="cv">CV</p></button>
-    </footer>
+    <footer class="footer">
+        <a class="footer__link" id="linkedIn" href="https://www.linkedin.com/in/emily-mitchesonsmith/" target="_blank">
+            <img src="./assets/icons/linkedin-icon.svg" alt="" />
+        </a>
+        <a class="footer__link" id="github" href="https://github.com/emmymitch" target="_blank">
+            <img src="./assets/icons/github-icon.svg" alt="" />
+        </a>
+        <a class="footer__link" id="cv" href="./CV Emily Mitcheson-Smith.pdf" target="_blank">
+            CV
+        </a>
+        </footer>
+
 
 </body>
 </html>

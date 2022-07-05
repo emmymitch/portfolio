@@ -27,6 +27,11 @@
 .expander__subtitle {
   display: inline-block;
 }
+.expander__icon {
+  filter: invert(100%);
+  width: 1rem;
+  margin-right: 1rem;
+}
 .expander__list-item {
   width: 100%;
   padding: 1.4rem 0;
@@ -49,6 +54,7 @@
 }
 .card__img {
   width: 100%;
+  height: 75%;
 }
 .card__title {
   margin: 0.5rem 0;
@@ -67,23 +73,29 @@
   justify-content: space-between;
   align-items: center;
 }
-.card button {
+.card__buttons {
+  display: flex;
+}
+.card__button {
   width: 3rem;
   height: 3rem;
   margin: 0.25rem;
+  display: flex;
+  align-items: center;
   border: none;
   border-radius: 50%;
   background-color: #412846;
   color: white;
 }
-.card button:hover {
+.card__button:hover {
   background-color: #4b3050;
   box-shadow: 0 0 0.75rem rgb(241, 184, 241);
   transition: ease-in-out 0.1s;
   cursor: pointer;
 }
-.card button i {
-  transform: scale(1.5);
+.card__button img {
+  transform: scale(0.5);
+  filter: invert(100%);
 }
 .card__tag-list {
   margin: 0.5rem 0;
@@ -156,16 +168,17 @@ nav .menu input {
 nav .menu__icon {
   display: inline-block;
   position: absolute;
-  right: 2rem;
-  top: 1.9rem;
+  right: 1.6rem;
+  top: 1.2rem;
+  width: 2.2rem;
   color: white;
+  filter: invert(100%);
   opacity: 100;
-  transform: scale(1.75);
 }
 nav .menu__icon--close {
-  top: 1.9rem;
+  transform: scale(0.75);
+  top: 0.9rem;
   opacity: 0;
-  transform: scale(1);
 }
 nav .menu__list {
   display: flex;
@@ -237,7 +250,7 @@ header h1 {
 header .line {
   margin: 1.5rem;
 }
-header #introduction {
+header .introduction {
   padding-top: 1rem;
   font-family: "Inter", "Tahoma", sans-serif;
   font-size: 1rem;
@@ -260,39 +273,39 @@ main .section-title h2 {
   text-transform: uppercase;
   color: white;
 }
-main #portfolio {
+main .portfolio {
   margin: 2.5rem 0;
 }
-main #portfolio h2 {
+main .portfolio h2 {
   display: inline-block;
 }
-main #portfolio .arrow-right-down {
+main .portfolio .arrow-right-down {
   transform: scale(0.5);
   vertical-align: bottom;
 }
-main #portfolio #card-4, main #portfolio #card-5, main #portfolio #card-6 {
+main .portfolio #card-4, main .portfolio #card-5, main .portfolio #card-6 {
   display: none;
 }
-main #about .picture #self {
+main .about .picture .self {
   width: 100%;
 }
-main #about .picture #dotGrid {
+main .about .picture .dotGrid {
   display: none;
 }
-main #about p {
+main .about p {
   padding: 3rem 0;
   font-family: "Inter", "Tahoma", sans-serif;
   font-size: 1rem;
   color: white;
   line-height: 160%;
 }
-main #contact {
+main .contact {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-main #contact h1 {
+main .contact h1 {
   margin: 2rem;
   font-family: "Cormorant", "Times New Roman", sans;
   font-size: 5rem;
@@ -300,7 +313,7 @@ main #contact h1 {
   color: white;
   text-align: center;
 }
-main #contact button {
+main .contact button {
   padding: 1.5rem 5rem;
   margin: 1.5rem;
   background-color: #311e39;
@@ -312,13 +325,13 @@ main #contact button {
   text-transform: uppercase;
   color: white;
 }
-main #contact button:hover {
+main .contact button:hover {
   background-color: #4b3050;
   box-shadow: 0 0 0.75rem rgb(241, 184, 241);
   cursor: pointer;
 }
 
-footer {
+.footer {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -327,7 +340,7 @@ footer {
   margin-top: 6rem;
   background-color: #412846;
 }
-footer button {
+.footer__link {
   width: 3rem;
   height: 3rem;
   padding: 1rem;
@@ -338,21 +351,31 @@ footer button {
   color: white;
   transition: ease-in-out 0.1s;
 }
-footer button:hover {
+.footer__link:hover {
   box-shadow: 0 0 0.75rem rgb(241, 184, 241);
   cursor: pointer;
 }
-footer button i {
-  transform: scale(2);
+.footer__link img {
+  filter: invert(100%);
 }
-footer button p {
+.footer #linkedIn img {
+  transform: scale(1.4);
+}
+.footer #github img {
+  transform: scale(1.6);
+}
+.footer #cv {
   display: flex;
   justify-content: center;
   align-items: center;
   font-family: sans-serif;
-  font-size: 1rem;
+  font-family: "Inter", "Tahoma", sans-serif;
+  font-size: 1.3rem;
   font-weight: 700;
-  transform: scale(1.4);
+  text-decoration: none;
+}
+.footer #cv:visited {
+  text-decoration: none;
 }
 
 @media screen and (min-width: 768px) {
@@ -422,7 +445,7 @@ footer button p {
     margin-top: -1.5rem;
     margin-bottom: 1.5rem;
   }
-  header #introduction {
+  header .introduction {
     padding-top: 1rem;
     width: 40%;
     font-family: "Inter", "Tahoma", sans-serif;
@@ -439,47 +462,47 @@ footer button p {
     font-size: 3rem;
     margin: 0 0.5rem;
   }
-  main #portfolio {
+  main .portfolio {
     margin: 0;
   }
-  main #portfolio .arrow-right-down {
+  main .portfolio .arrow-right-down {
     transform: scale(1);
     padding: 0.25rem 1rem;
   }
-  main #portfolio #card-4, main #portfolio #card-5, main #portfolio #card-6 {
+  main .portfolio #card-4, main .portfolio #card-5, main .portfolio #card-6 {
     display: inline-block;
   }
-  main #portfolio #project-cards {
+  main .portfolio .project-cards {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     flex-wrap: wrap;
   }
-  main #portfolio .card {
+  main .portfolio .card {
     margin: 0 0.5rem;
     padding-bottom: 1.5rem;
     width: 23rem;
     flex-grow: 1;
   }
-  main #about {
+  main .about {
     margin: 10rem 6%;
   }
 }
 @media screen and (min-width: 768px) and (min-width: 1024px) {
-  main #about #profile {
+  main .about .profile {
     display: grid;
     grid-template-columns: 1fr 1fr;
     -moz-column-gap: 4rem;
          column-gap: 4rem;
     justify-content: start;
   }
-  main #about #profile .section-title {
+  main .about .profile .section-title {
     grid-area: 1/1/2/2;
     margin: 0;
     padding: 0;
     align-self: end;
   }
-  main #about #profile .picture {
+  main .about .profile .picture {
     grid-area: 1/2/3/3;
     width: 90%;
     height: auto;
@@ -488,12 +511,12 @@ footer button p {
     top: 0;
     left: 0;
   }
-  main #about #profile .picture #self {
+  main .about .profile .picture .self {
     position: relative;
     top: 0;
     left: 0;
   }
-  main #about #profile .picture #dotGrid {
+  main .about .profile .picture .dotGrid {
     display: inline-block;
     position: absolute;
     top: -10%;
@@ -501,18 +524,18 @@ footer button p {
     z-index: 1;
     transform: scale(75%);
   }
-  main #about #profile p {
+  main .about .profile p {
     grid-area: 2/1/3/2;
   }
 }
 @media screen and (min-width: 768px) {
-  main #about #personal-information {
+  main .about .personal-information {
     display: flex;
     justify-content: space-between;
   }
 }
 @media screen and (min-width: 768px) {
-  main #about .expander {
+  main .about .expander {
     display: inline-block;
     width: 45%;
   }

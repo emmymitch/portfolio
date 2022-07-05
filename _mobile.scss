@@ -45,17 +45,18 @@ nav{
         &__icon{
             display: inline-block;
             position: absolute;
-            right: 2rem;
-            top: 1.9rem;
+            right: 1.6rem;
+            top: 1.2rem;
+            width: 2.2rem;
 
             color: $colour-primary;
+            filter: invert(100%);
             opacity: 100;
-            transform: scale(1.75);
 
             &--close{
-                top: 1.9rem;
+                transform: scale(0.75);
+                top: 0.9rem;
                 opacity: 0;
-                transform: scale(1);
             }
         }
 
@@ -149,7 +150,7 @@ header{
         margin: 1.5rem;
     }
 
-    #introduction{
+    .introduction{
         padding-top: 1rem;
         font-family: $font-body;
         font-size: 1rem;
@@ -178,7 +179,7 @@ main{
     }
 
     // Portfolio
-    #portfolio{
+    .portfolio{
         margin: 2.5rem 0;
 
         h2{
@@ -196,12 +197,12 @@ main{
     }
 
     // About Me
-    #about{
+    .about{
         .picture{
-            #self{
+            .self{
                 width:100%;
             }
-            #dotGrid{
+            .dotGrid{
                 display: none;
             }
         }
@@ -216,7 +217,7 @@ main{
 
     }
 
-    #contact{
+    .contact{
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -257,7 +258,7 @@ main{
     }
 }
 
-footer{
+.footer{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -268,7 +269,7 @@ footer{
 
     background-color: $colour-background-secondary;
 
-    button{
+    &__link{
         width: 3rem;
         height: 3rem;
         padding: 1rem;
@@ -286,19 +287,33 @@ footer{
             cursor: pointer;
         }
 
-        i{
-            transform: scale(2);
+        img{
+            filter: invert(100%);
         }
 
-        p{
-            display: flex;
-            justify-content: center;
-            align-items: center;
+    }
 
-            font-family: sans-serif;
-            font-size: 1rem;
-            font-weight: 700;
-            transform: scale(1.4);
+    #linkedIn{
+        img{transform: scale(1.4);}
+    }
+
+    #github{
+        img{transform: scale(1.6);}
+    }
+
+    #cv{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        font-family: sans-serif;
+        font-family: $font-body;
+        font-size: 1.3rem;
+        font-weight: 700;
+        text-decoration: none;
+
+        &:visited{
+            text-decoration: none;
         }
     }
 }
