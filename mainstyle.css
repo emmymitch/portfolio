@@ -54,7 +54,7 @@
 }
 .card__img {
   width: 100%;
-  height: 75%;
+  height: auto;
 }
 .card__title {
   margin: 0.5rem 0;
@@ -432,7 +432,6 @@ main .contact button:hover {
   nav .menu__list a:hover {
     color: #dbb4b1;
   }
-
   header {
     margin: 0;
     padding: 0 6rem;
@@ -453,7 +452,6 @@ main .contact button:hover {
     color: white;
     line-height: 160%;
   }
-
   main {
     margin: -2rem 0;
     padding: 0 6rem;
