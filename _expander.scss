@@ -1,3 +1,5 @@
+@use "./variables" as *;
+
 .expander{
     margin: 4rem 0;
 
@@ -16,6 +18,8 @@
 
     &__subtitle{
         display: inline-block;
+        font-family: $font-title;
+        font-size: 1rem;
     }
 
     &__icon{
@@ -29,8 +33,9 @@
         padding: 1.4rem 0;
         border-bottom: 0.125rem inset $colour-background-tertiary;
 
-        font-family: $font-title;
-        font-size: 1rem;
+        font-family: $font-body;
+        font-size: 0.85rem;
+        line-height: 160%;
         color: $colour-primary;
 
         &--clickable{
@@ -41,6 +46,18 @@
 
         &--expand{
             display: none;
+            margin: 0 1rem;
         }
     }
+
+    &__date{
+        margin: 0.5rem 0;
+        font-family: $font-title;
+        font-size: 1rem;
+        color: $colour-primary;
+    }
+}
+
+.double-list{
+    margin: 0 1rem;
 }
