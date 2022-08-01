@@ -502,7 +502,7 @@ main .contact button:hover {
     flex-grow: 1;
   }
   main .portfolio .card__img {
-    min-height: 16.5rem;
+    min-height: 18.5rem;
     -o-object-fit: cover;
        object-fit: cover;
   }
