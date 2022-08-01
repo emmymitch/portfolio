@@ -136,6 +136,11 @@
                 padding-bottom: 1.5rem;
                 width: 23rem;
                 flex-grow: 1;
+
+                &__img{
+                    min-height: 18rem;
+                    object-fit: cover;
+                }
             }
         }
 
