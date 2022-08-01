@@ -56,6 +56,13 @@
         font-size: 1rem;
         color: $colour-primary;
     }
+
+    &__button{
+        &--hidden{
+            background: none;
+            border: none;
+        }
+    }
 }
 
 .double-list{
