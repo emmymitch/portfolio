@@ -10,12 +10,14 @@ const expandItem = (section) => {
     //If not diplayed, display, and change + to -
     if (section.nextElementSibling.style.display == "none"){
         section.nextElementSibling.style.display = "inline-block";
-        section.lastChild.previousSibling.src = "./assets/icons/minus-icon.svg";
+        section.lastElementChild.firstElementChild.src = "./assets/icons/minus-icon.svg";
+        section.lastElementChild.firstElementChild.alt = "Hide section";
 
     //If displayed, hide, and change - to +
     } else if(section.nextElementSibling.style.display == "inline-block"){
         section.nextElementSibling.style.display = "none";
-        section.lastChild.previousSibling.src = "./assets/icons/plus-icon.svg";
+        section.lastElementChild.firstElementChild.src = "./assets/icons/plus-icon.svg";
+        section.lastElementChild.firstElementChild.alt = "Show section";
         
     } else{
         return;
