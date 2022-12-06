@@ -139,7 +139,9 @@
 
                 &__img{
                     min-height: 18.5rem;
+                    max-height: 10rem;
                     object-fit: cover;
+                    object-position: 0%;
                 }
 
                 &__description{

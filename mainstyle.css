@@ -503,8 +503,11 @@ main .contact button:hover {
   }
   main .portfolio .card__img {
     min-height: 18.5rem;
+    max-height: 10rem;
     -o-object-fit: cover;
        object-fit: cover;
+    -o-object-position: 0%;
+       object-position: 0%;
   }
   main .portfolio .card__description {
     align-items: flex-start;
