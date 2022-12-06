@@ -506,6 +506,12 @@ main .contact button:hover {
     -o-object-fit: cover;
        object-fit: cover;
   }
+  main .portfolio .card__description {
+    align-items: flex-start;
+  }
+  main .portfolio .card__buttons {
+    margin: 0.55rem 0;
+  }
   main .about {
     margin: 10rem 6%;
   }

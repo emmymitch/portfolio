@@ -141,6 +141,14 @@
                     min-height: 18.5rem;
                     object-fit: cover;
                 }
+
+                &__description{
+                    align-items: flex-start;
+                }
+
+                &__buttons{
+                    margin: 0.55rem 0;
+                }
             }
         }
 
